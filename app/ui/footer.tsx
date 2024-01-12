@@ -12,8 +12,8 @@ const links = [
     label: "Home",
   },
   {
-    href: "/",
-    label: "About",
+    href: "/project",
+    label: "Project",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Footer() {
         ))}
         <li className="px-3 py-1 rounded-full">
           <Link href="https://github.com/alfazh123">
-            <FaGithub className="w-6 h-6" />
+            <FaGithub className="text-3xl" />
           </Link>
         </li>
       </ul>
