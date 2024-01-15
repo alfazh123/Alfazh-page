@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="relative">
       <body className={inter.className}>
         <Navbar />
-        <main>{children}</main>
+        <main className="py-32 mx-auto md:w-3/4 w-5/6">{children}</main>
         <Footer />
       </body>
     </html>
