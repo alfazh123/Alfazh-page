@@ -18,7 +18,7 @@ const projects = [
 
 export default function Project() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col space-y-20 px-4">
             <h1 className="font-bold text-6xl">Project</h1>
             <div className="flex flex-col space-y-4">
                 {projects.map((project, index) => (
