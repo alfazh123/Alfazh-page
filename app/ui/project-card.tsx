@@ -17,7 +17,7 @@ export default function ProjectCard({
   tag,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col bg-slate-800 text-slate-200 shadow-2xl transition ease-in-out delay-150 hover:border-solid hover:border-b-2 hover:scale-105 hover:border-slate-200 duration-300 w-full rounded-lg">
+    <div className="flex flex-col bg-slate-800 shadow-2xl transition ease-in-out delay-150 border-solid border-2 hover:scale-105 border-slate-600 hover:border-slate-400 duration-300 w-full rounded-lg">
       <Link href={href} className="m-2">
         <Image
           src={src}
@@ -71,7 +71,31 @@ export function CardProject({
 }: ProjectCardProps) {
   return (
     <div>
-      <h1>halo</h1>
+      <div className="flex bg-slate-800 shadow-2xl transition ease-in-out border-solid border-2 border-slate-600 hover:border-slate-400 duration-300 w-full rounded-lg">
+        <Link href={href} className="m-2 flex md:flex-row flex-col">
+          <Image
+            src={src}
+            alt={title}
+            width={500}
+            height={500}
+            className="md:w-80 w-full aspect-auto rounded-md "
+          />
+          <div className="items-center mx-4">
+            <h3 className="text-lg font-bold my-3 mx-1">{title}</h3>
+            <p className="text-gray-500">{description}</p>
+            <div className="justify-between mb-4">
+              {tag?.map((tag, index) => (
+                <div
+                  key={tag}
+                  className="border-solid border-2 font-semibold border-slate-200 px-2 py-1 rounded-md text-sm inline-block mx-1"
+                >
+                  {tag}
+                </div>
+              ))}
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
