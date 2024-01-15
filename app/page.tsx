@@ -34,9 +34,9 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col mx-auto w-3/4  text-justify space-y-20 mb-10 px-4">
+    <main className="flex flex-col text-justify space-y-20 mb-10 px-4">
       <div className="min-h-3/4 flex justify-center">
-        <header className="mt-32 rounded-lg h-96 w-full">
+        <header className="rounded-lg h-96 w-full">
           <div className="mt-32 py-3 md:w-1/2 space-y-5">
             <h1 className="text-6xl font-bold">Hi, I'm Alfazh</h1>
             <p className="text-xl">
