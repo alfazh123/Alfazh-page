@@ -18,17 +18,19 @@ const projects = [
 
 export default function Project() {
   return (
-    <div>
-      <h1>Project</h1>
-      <div className="flex flex-wrap justify-center">
-        {projects.map((project) => (
-          <CardProject
-            title={project.title}
-            description={project.description}
-            src={project.src}
-            href={project.link}
-            tag={project.tag}
-          />
+    <div className="min-h-screen flex flex-col">
+      <h1 className="font-bold text-6xl">Project</h1>
+      <div className="flex flex-col space-y-4">
+        {projects.map((project, index) => (
+          <div key={index}>
+            <CardProject
+              title={project.title}
+              description={project.description}
+              src={project.src}
+              href={project.link}
+              tag={project.tag}
+            />
+          </div>
         ))}
       </div>
     </div>
