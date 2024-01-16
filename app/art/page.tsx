@@ -10,18 +10,18 @@ export default function Art() {
 
             <div className="columns-4 gap-4 space-y-4">
                 <Image
-                    src="/art/1.jpg"
+                    src="/art1.png"
                     alt="1"
                     width={500}
                     height={500}
-                    className="w-full h-96 aspect-auto rounded-lg bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
+                    className="w-full h-full aspect-auto rounded-lg bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
                 />
                 <Image
-                    src="/art/2.jpg"
+                    src="/art2.png"
                     alt="2"
                     width={500}
                     height={500}
-                    className="w-full h-60 aspect-auto rounded-lg bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
+                    className="w-full h-full aspect-auto rounded-lg bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
                 />
                 <Image
                     src="/art/3.jpg"
