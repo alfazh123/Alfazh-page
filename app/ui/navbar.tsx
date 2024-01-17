@@ -5,6 +5,7 @@ import {
     FaHammer,
     FaQuestion,
     FaPaintRoller,
+    FaBook,
 } from "react-icons/fa";
 
 const links = [
@@ -27,6 +28,11 @@ const links = [
         href: "/art",
         label: "Art",
         icon: <FaPaintRoller className="text-2xl" />,
+    },
+    {
+        href: "/guest-book",
+        label: "Guest Book",
+        icon: <FaBook className="text-2xl" />,
     },
 ];
 
