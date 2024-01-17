@@ -12,7 +12,6 @@ export default async function GuestBook() {
     return (
         <div>
             <h1>Guest Book</h1>
-            <Link href="/api/auth/signin">Login</Link>
             <Link href="/api/auth/signout">Logout</Link>
         </div>
     );
