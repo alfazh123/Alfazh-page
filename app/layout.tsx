@@ -17,10 +17,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="relative">
+        <html
+            lang="en"
+            className="relative dark:bg-slate-800 dark:text-slate-100"
+        >
             <body className={inter.className}>
                 <Navbar />
-                <main className="py-32 mx-auto md:w-3/4 w-5/6">{children}</main>
+                <main className="py-32 mx-auto md:w-3/4 w-5/6 justify-center items-center">
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>
