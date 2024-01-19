@@ -1,18 +1,27 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getServerSession } from "next-auth";
 import { options } from "../api/auth/[...nextauth]/options";
-import { redirect } from "next/navigation";
+import LogoutBtn from "../ui/logout-btn";
+import LoginBtn from "../ui/login-btn";
 
 export default async function GuestBook() {
     const session = await getServerSession(options);
 
-    if (!session) {
-        redirect("/api/auth/signin?callbackUrl=/guest-book");
+    function sessionUser() {
+        if (session) {
+            return <LogoutBtn />;
+        } else {
+            return <LoginBtn />;
+        }
     }
     return (
         <div>
             <h1>Guest Book</h1>
-            <Link href="/api/auth/signout">Logout</Link>
+            {sessionUser()}
+            <div className={`${session ? "block" : "hidden"}`}>
+                <h2>Hi, {session?.user?.name}</h2>
+            </div>
         </div>
     );
 }
