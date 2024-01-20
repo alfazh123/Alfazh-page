@@ -23,7 +23,7 @@ export default function RootLayout({
         >
             <body className={inter.className}>
                 <Navbar />
-                <main className="py-32 mx-auto md:w-3/4 w-5/6 justify-center items-center">
+                <main className="py-32 mx-auto lg:w-3/4 w-5/6 justify-center items-center">
                     {children}
                 </main>
                 <Footer />

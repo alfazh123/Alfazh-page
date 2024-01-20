@@ -26,7 +26,7 @@ export default function ProjectCard({
                     height={500}
                     className="w-full aspect-auto rounded-md "
                 />
-                <div className="items-center mx-4">
+                <div className="items-center ">
                     <h3 className="text-lg font-bold my-3 mx-1">{title}</h3>
                     <div className="justify-between mb-4">
                         {tag?.map((tag) => (
