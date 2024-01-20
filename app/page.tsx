@@ -21,25 +21,25 @@ const projects = [
         description: "NextJS is a React Framework for production",
         src: "/ace2024.png",
         href: "https://ace2024.vercel.app",
-        tag: ["NextJS", "Tailwind", "MDX", "TS"],
+        tag: ["NextJS", "MDX"],
     },
     {
         title: "Redesign KediriKab",
         description: "Tailwind is a utility-first CSS framework",
         src: "/next.svg",
         href: "https://github.com/alfazh123/redesign_kedirikab",
-        tag: ["NextJS", "Tailwind", "JS"],
+        tag: ["NextJS"],
     },
 ];
 
 export default function Home() {
     return (
-        <main className="flex flex-col text-justify space-y-20 mb-10 px-4">
-            <div className="min-h-3/4 flex justify-center">
-                <header className="rounded-lg h-96 w-full">
-                    <div className="mt-32 py-3 md:w-1/2 space-y-5">
+        <main className="flex flex-col mb-10 px-4">
+            <div className="min-h-3/4 static flex justify-center bg-slate-600 p-5 rounded-lg mb-20">
+                <header className="static bottom-0 left-0 rounded-lg min-h-96 w-full">
+                    <div className="mt-32 py-3 lg:w-1/2 space-y-5">
                         <h1 className="text-6xl font-bold">Hi, I'm Alfazh</h1>
-                        <p className="text-xl">
+                        <p className="text-xl text-justify">
                             I'm a Front End Engginer at Surabaya. Personally I'm
                             using NextJS, Tailwind, MDX, I'm a self-taught
                             developer and I love to learn new things. I'm
@@ -47,14 +47,15 @@ export default function Home() {
                         </p>
                     </div>
                     <Link href="/about">
-                        <button className="text-slate-200 border-solid border-2 border-slate-200 px-4 py-2 rounded-full hover:bg-slate-200 hover:text-slate-900">
+                        <button className=" border-solid border-2 border-slate-200 hover:overflow-hidden hover:bg-slate-200 hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300  px-3 py-2 rounded-lg">
                             About Me
                         </button>
                     </Link>
                 </header>
             </div>
-
-            <div className="space-y-2">
+            {/* 
+            <div className="flex md:flex-row flex-col md:space-x-10 space-x-0"> */}
+            <div className="space-y-2 mb-10">
                 <h3 className="text-lg font-semibold">Some Project</h3>
                 <p className="text-gray-500">
                     Here's latest project that I've been working on
@@ -63,6 +64,17 @@ export default function Home() {
                     {projects.map((project) => (
                         <ProjectCard key={project.title} {...project} />
                     ))}
+                    <Link href="/project" className="">
+                        <div className="bg-slate-600 rounded-lg p-5 h-full flex flex-col justify-center items-center">
+                            <h3 className="text-2xl font-semibold">
+                                More Project
+                            </h3>
+                            <p className="text-gray-500">
+                                You can see more project on my github
+                            </p>
+                            <p>See more</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -74,6 +86,8 @@ export default function Home() {
                     ))}
                 </div>
             </div>
+
+            {/* </div> */}
         </main>
     );
 }
