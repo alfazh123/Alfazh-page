@@ -22,6 +22,8 @@ export default function Books() {
                     >
                         <Book
                             title={book.title}
+                            author={book.author}
+                            publishedYear={book.publishedYear}
                             description={book.description}
                             src={book.src}
                             href={book.link}

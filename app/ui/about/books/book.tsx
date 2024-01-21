@@ -5,19 +5,21 @@ import Image from "next/image";
 interface BookProps {
     id: number;
     title: string;
+    author?: string[];
     description: string;
+    publishedYear: number;
     src: string;
     href: string;
-    tag?: string[];
 }
 
 export default function Book({
     id,
     title,
-    src,
+    author,
     description,
+    publishedYear,
+    src,
     href,
-    tag,
 }: BookProps) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -67,7 +69,7 @@ export default function Book({
                     onClick={closeModal}
                 >
                     <div
-                        className="bg-slate-300 z-30 rounded-lg w-96 p-10"
+                        className="bg-slate-300 z-30 rounded-lg sm:w-5/6 w-full sm:m-0 mx-4 sm:p-10 p-4 md:grid md:grid-cols-2 md:gap-5"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <Image
@@ -75,11 +77,28 @@ export default function Book({
                             alt={title}
                             width={500}
                             height={500}
-                            className="w-full aspect-auto rounded-md  h-full"
+                            className="w-full aspect-auto rounded-md md:h-full h-80 bg-slate-700 "
                         />
-                        <div>
-                            <h2 className="text-2xl font-semibold">{title}</h2>
-                            <p>{description}</p>
+                        <div className="space-y-2">
+                            <div>
+                                <h2 className="md:text-2xl text-lg font-bold">
+                                    {title}
+                                </h2>
+                                <p className="md:text-sm text-xs font-semibold">
+                                    {publishedYear}
+                                </p>
+                                {author?.map((author, index) => (
+                                    <p
+                                        key={index}
+                                        className="md:text-sm text-xs font-semibold"
+                                    >
+                                        {author}
+                                    </p>
+                                ))}
+                            </div>
+                            <p className="text-justify md:text-base sm:text-sm text-xs">
+                                {description}
+                            </p>
                         </div>
                     </div>
                 </div>
