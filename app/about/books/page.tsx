@@ -16,16 +16,16 @@ export default function Books() {
                         onClick={() => setActive(index)}
                         className={`relative cursor-pointer w-[8%] ${
                             active === index ? "w-[35%]" : ""
-                        }
-                        md:[transition:width_var(--transition,200ms_ease-in)] ${
-                            active === index ? "" : "hover:w-[20%]"
-                        }`}
+                        } 
+                        md:[transition:width_var(--transition,200ms_ease-in)] hover:w-[20%]
+                        `}
                     >
                         <Book
                             title={book.title}
                             description={book.description}
                             src={book.src}
                             href={book.link}
+                            id={book.id}
                         />
                     </li>
                 ))}
