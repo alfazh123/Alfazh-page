@@ -2,7 +2,7 @@ export const books = [
     {
         id: 1,
         title: "Book 1",
-        author: "Author 1",
+        author: ["Author 1"],
         publishedYear: 2001,
         src: "",
         description: "Description of Book 1",
@@ -11,7 +11,7 @@ export const books = [
     {
         id: 2,
         title: "Book 2",
-        author: "Author 2",
+        author: ["Author 2"],
         publishedYear: 2002,
         src: "",
         description: "Description of Book 2",
@@ -20,7 +20,7 @@ export const books = [
     {
         id: 3,
         title: "Book 3",
-        author: "Author 3",
+        author: ["Author 3"],
         publishedYear: 2003,
         src: "",
         description: "Description of Book 3",
@@ -29,7 +29,7 @@ export const books = [
     {
         id: 4,
         title: "Book 4",
-        author: "Author 4",
+        author: ["Author 4"],
         publishedYear: 2004,
         src: "",
         description: "Description of Book 4",
@@ -38,7 +38,7 @@ export const books = [
     {
         id: 5,
         title: "Book 5",
-        author: "Author 5",
+        author: ["Author 5"],
         publishedYear: 2005,
         src: "",
         description: "Description of Book 5",
@@ -47,7 +47,7 @@ export const books = [
     {
         id: 6,
         title: "Book 6",
-        author: "Author 6",
+        author: ["Author 6"],
         publishedYear: 2006,
         src: "",
         description: "Description of Book 6",
@@ -56,7 +56,7 @@ export const books = [
     {
         id: 7,
         title: "Book 7",
-        author: "Author 7",
+        author: ["Author 7"],
         publishedYear: 2007,
         src: "",
         description: "Description of Book 7",
@@ -65,28 +65,10 @@ export const books = [
     {
         id: 8,
         title: "Book 8",
-        author: "Author 8",
+        author: ["Author 8"],
         publishedYear: 2008,
         src: "",
         description: "Description of Book 8",
         link: "",
     },
-    // {
-    //     id: 9,
-    //     title: "Book 9",
-    //     author: "Author 9",
-    //     publishedYear: 2009,
-    //     src: "",
-    //     description: "Description of Book 9",
-    //     link: "",
-    // },
-    // {
-    //     id: 10,
-    //     title: "Book 10",
-    //     author: "Author 10",
-    //     publishedYear: 2010,
-    //     src: "",
-    //     description: "Description of Book 10",
-    //     link: "",
-    // },
 ];
