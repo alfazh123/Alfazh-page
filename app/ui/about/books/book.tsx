@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 interface BookProps {
-    id: number;
+    id: string;
     title: string;
     author?: string[];
     description: string;
