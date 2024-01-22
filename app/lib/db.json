@@ -1,0 +1,31 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Starry Night",
+      "author": ["Vincent Van Gogh", "Laut bercerita"],
+      "year": 1889,
+      "description": "A depiction of the view from Van Gogh's sanitarium room window at night.",
+      "image_url": "",
+      "link": ""
+    },
+    {
+      "id": "2",
+      "title": "The Mona Lisa",
+      "author": ["Leonardo da Vinci"],
+      "year": 1503,
+      "description": "A portrait of a woman with an enigmatic smile.",
+      "image_url": "",
+      "link": ""
+    },
+    {
+      "id": "4",
+      "title": "The Starry Night",
+      "author": ["Laut bercerita"],
+      "year": 1889,
+      "description": "A depiction of the view from Van Gogh's sanitarium room window at night.",
+      "image_url": "",
+      "link": ""
+    }
+  ]
+}
