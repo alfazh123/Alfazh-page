@@ -2,7 +2,7 @@
 
 import Book from "@/app/ui/about/books/book";
 import { useState } from "react";
-import { books } from "./books";
+import db from "@/app/lib/db.json";
 
 export default function Books() {
     const [active, setActive] = useState(0);
@@ -10,7 +10,7 @@ export default function Books() {
         <div>
             <h1>Books</h1>
             <ul className="goup flex gap-2">
-                {books.map((book, index) => (
+                {db.books.map((book, index) => (
                     <li
                         key={book.id}
                         onClick={() => setActive(index)}
@@ -23,9 +23,9 @@ export default function Books() {
                         <Book
                             title={book.title}
                             author={book.author}
-                            publishedYear={book.publishedYear}
+                            publishedYear={book.year}
                             description={book.description}
-                            src={book.src}
+                            src={book.image_url}
                             href={book.link}
                             id={book.id}
                         />
