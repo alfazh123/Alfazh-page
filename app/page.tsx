@@ -40,10 +40,12 @@ export default function Home() {
                     <div className="mt-32 py-3 lg:w-1/2 space-y-5">
                         <h1 className="text-6xl font-bold">Hi, I'm Alfazh</h1>
                         <p className="text-xl text-justify">
-                            I'm a Front End Engginer at Surabaya. Personally I'm
-                            using NextJS, Tailwind, MDX, I'm a self-taught
-                            developer and I love to learn new things. I'm
-                            currently learning at State University of Surabaya.
+                            I'm a Front End Developer from Surabaya. Personaly
+                            I'm using NextJs and Tailwind for My Project. I'm a
+                            student at State University of Surabaya, I'm
+                            currently learning about Web Development and BackEnd
+                            Development. Fell free to contact me if you want to
+                            work with. 😁
                         </p>
                     </div>
                     <Link href="/about">
