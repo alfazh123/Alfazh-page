@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="flex md:flex-row flex-col md:px-20 px-4 py-10 md:justify-between justify-center items-center">
             <h1 className="font-bold text-3xl flex md:mb-0 mb-5">.Alfazh</h1>
             <div className="items-center flex md:flex-row flex-col">
-                <p>Let's Get In Touch 👍 </p>
+                <p>Let&apos;s Get In Touch 👍 </p>
                 <ul className="justify-between flex">
                     {links.map(({ href, label, icon }) => (
                         <li key={`${href}${label}`}>
