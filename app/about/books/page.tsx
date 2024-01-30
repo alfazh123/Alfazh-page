@@ -5,19 +5,17 @@ import { useState } from "react";
 import db from "@/app/lib/db.json";
 
 export default function Books() {
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(1);
     return (
         <div>
             <h1>Books</h1>
-            <ul className="goup flex gap-2">
-                {db.books.map((book, index) => (
+            <ul className="flex relative md:flex-row flex-col gap-4">
+                {db.books.map((book, id) => (
                     <li
                         key={book.id}
-                        onClick={() => setActive(index)}
-                        className={`relative cursor-pointer w-[8%] ${
-                            active === index ? "w-[35%]" : ""
-                        } 
-                        md:[transition:width_var(--transition,200ms_ease-in)] hover:w-[20%]
+                        onClick={() => setActive(id)}
+                        className={`md:relative cursor-pointer md:w-[8%] 
+                        md:[transition:width_var(--transition,200ms_ease-in)] md:hover:w-[20%]
                         `}
                     >
                         <Book
@@ -28,6 +26,7 @@ export default function Books() {
                             src={book.image_url}
                             href={book.link}
                             id={book.id}
+                            year={book.year}
                         />
                     </li>
                 ))}
