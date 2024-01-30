@@ -10,6 +10,7 @@ interface BookProps {
     publishedYear: number;
     src: string;
     href: string;
+    year: number;
 }
 
 export default function Book({
@@ -20,6 +21,7 @@ export default function Book({
     publishedYear,
     src,
     href,
+    year,
 }: BookProps) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -40,7 +42,7 @@ export default function Book({
                 type="button"
                 data-ripple-light="true"
                 data-dialog-target={`"${id}"`}
-                className="bg-slate-600 rounded-lg h-80 w-full"
+                className="bg-slate-600 md:rounded-lg rounded-xl md:h-80 h-full w-full"
                 onClick={openModal}
             >
                 <Image
@@ -48,8 +50,20 @@ export default function Book({
                     alt={title}
                     width={500}
                     height={500}
-                    className="w-full aspect-auto rounded-md bg-slate-700 h-full"
+                    className={`w-full aspect-auto rounded-md bg-slate-700 h-full object-cover object-left md:block hidden`}
                 />
+                <div className="md:hidden block my-5">
+                    <Image
+                        src={src}
+                        alt={title}
+                        width={500}
+                        height={500}
+                        className={`mx-auto rounded-md sm:w-60 w-32`}
+                    />
+                    <p>
+                        {title},{year}
+                    </p>
+                </div>
             </button>
 
             {isOpen && (
@@ -69,7 +83,7 @@ export default function Book({
                     onClick={closeModal}
                 >
                     <div
-                        className="bg-slate-300 z-30 rounded-lg sm:w-5/6 w-full sm:m-0 mx-4 sm:p-10 p-4 md:grid md:grid-cols-2 md:gap-5"
+                        className="bg-slate-300 z-30 rounded-lg sm:w-5/6 w-full sm:m-0 mx-4 sm:p-10 p-4 md:grid md:grid-cols-2 md:gap-5 snap-y overflow-scroll h-5/6"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <Image
@@ -77,7 +91,7 @@ export default function Book({
                             alt={title}
                             width={500}
                             height={500}
-                            className="w-full aspect-auto rounded-md md:h-full h-80 bg-slate-700 "
+                            className="w-96 aspect-auto rounded-md h-full  bg-slate-700 "
                         />
                         <div className="space-y-2">
                             <div>
