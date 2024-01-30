@@ -2,30 +2,60 @@
   "books": [
     {
       "id": "1",
-      "title": "The Starry Night",
-      "author": ["Vincent Van Gogh", "Laut bercerita"],
-      "year": 1889,
-      "description": "A depiction of the view from Van Gogh's sanitarium room window at night.",
-      "image_url": "",
+      "title": "Laut Bercerita",
+      "author": ["Leila S. Chudori"],
+      "year": 2017,
+      "description": "Sebuah novel yang menceritakan tentang keluarga, sahabat, kekasih yang kehilangan pada kejadian tahun 1998 yang lalu.",
+      "image_url": "/books/laut-bercerita.jpg",
       "link": ""
     },
     {
       "id": "2",
-      "title": "The Mona Lisa",
-      "author": ["Leonardo da Vinci"],
-      "year": 1503,
+      "title": "Pulang",
+      "author": ["Tere Liye"],
+      "year": 2015,
       "description": "A portrait of a woman with an enigmatic smile.",
-      "image_url": "",
+      "image_url": "/books/pulang.jpg",
       "link": ""
     },
     {
-      "id": "4",
-      "title": "The Starry Night",
-      "author": ["Laut bercerita"],
-      "year": 1889,
-      "description": "A depiction of the view from Van Gogh's sanitarium room window at night.",
-      "image_url": "",
+      "id": "3",
+      "title": "Padang Bulan",
+      "author": ["Andrea Hirata"],
+      "year": 2015,
+      "description": "",
+      "image_url": "/books/Padang-bulan.jpg",
       "link": ""
+    }
+  ],
+  "projects": [
+    {
+        "id":"1",
+        "title": "ACE 2024",
+        "description": "NextJS is a React Framework for production",
+        "src": "/ace2024.png",
+        "href": "https://ace2024.vercel.app",
+        "tag": ["NextJS", "MDX"]
+    },
+    {
+        "id":"2",
+        "title": "Redesign KediriKab",
+        "description": "Tailwind is a utility-first CSS framework",
+        "src": "/kediriweb.png",
+        "href": "https://github.com/alfazh123/redesign_kedirikab",
+        "tag": ["NextJS"]
+    }
+  ],
+  "art": [
+    {
+      "id": "1",
+      "title": "The Starry Night",
+      "image-url": "/art1.png"
+    },
+    {
+      "id":"2",
+      "title": "The Starry Night",
+      "image-url": "/art2.png"
     }
   ]
 }
