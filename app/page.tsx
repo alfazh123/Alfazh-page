@@ -1,36 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import Skill from "./ui/skill";
 import ProjectCard from "./ui/project-card";
-
-const skills = [
-    {
-        skill: "NextJS",
-    },
-    {
-        skill: "Tailwind",
-    },
-    {
-        skill: "NodeJS",
-    },
-];
-
-const projects = [
-    {
-        title: "ACE 2024",
-        description: "NextJS is a React Framework for production",
-        src: "/ace2024.png",
-        href: "https://ace2024.vercel.app",
-        tag: ["NextJS", "MDX"],
-    },
-    {
-        title: "Redesign KediriKab",
-        description: "Tailwind is a utility-first CSS framework",
-        src: "/next.svg",
-        href: "https://github.com/alfazh123/redesign_kedirikab",
-        tag: ["NextJS"],
-    },
-];
+import db from "@/app/lib/db.json";
 
 export default function Home() {
     return (
@@ -58,15 +28,20 @@ export default function Home() {
             {/* 
             <div className="flex md:flex-row flex-col md:space-x-10 space-x-0"> */}
             <div className="space-y-2 mb-10">
-                <h3 className="text-lg font-semibold">Some Project</h3>
+                <h3 className="text-2xl font-semibold">Some Project</h3>
                 <p className="text-gray-500">
                     Here's latest project that I've been working on
                 </p>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
-                    {projects.map((project) => (
-                        <ProjectCard key={project.title} {...project} />
+                    {db.projects.map((project, id) => (
+                        <div className={`${id <= 2 ? "" : "hidden"}`}>
+                            <ProjectCard key={id} {...project} />
+                        </div>
                     ))}
-                    <Link href="/project" className="">
+                    <Link
+                        href="/project"
+                        className="border-solid border-2 border-slate-200"
+                    >
                         <div className="bg-slate-600 rounded-lg p-5 h-full flex flex-col justify-center items-center">
                             <h3 className="text-2xl font-semibold">
                                 More Project
@@ -80,14 +55,38 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col space-y-4">
+            <h1 className="font-semibold text-2xl mt-10">Some of My Hobby</h1>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 mt-4 gap-4">
+                <div className="h-60 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg">
+                    <h2>{}</h2>
+                </div>
+                <Link
+                    href="/art"
+                    className="h-60 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg lg:col-span-2"
+                >
+                    <h2>Art</h2>
+                </Link>
+                <div className="bg-slate-600 items-center justify-center flex flex-col h-60 w-full rounded-lg lg:col-span-2">
+                    <h2>Blog</h2>
+                    <h2 className="text-6xl">🗒️</h2>
+                </div>
+                <Link
+                    href="/about/books"
+                    className="bg-slate-600 items-center justify-center flex flex-col h-60 w-full rounded-lg"
+                >
+                    <h2>Books</h2>
+                    <p className="text-6xl">📚</p>
+                </Link>
+            </div>
+
+            {/* <div className="flex flex-col space-y-4">
                 <h3 className="text-lg font-semibold">Skills</h3>
                 <div className="flex flex-wrap gap-5">
                     {skills.map(({ skill }) => (
                         <Skill key={skill} skill={skill} />
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             {/* </div> */}
         </main>
