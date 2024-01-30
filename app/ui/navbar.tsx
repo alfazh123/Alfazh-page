@@ -25,11 +25,6 @@ const links = [
         icon: <FaQuestion className="text-2xl" />,
     },
     {
-        href: "/art",
-        label: "Art",
-        icon: <FaPaintRoller className="text-2xl" />,
-    },
-    {
         href: "/guest-book",
         label: "Guest Book",
         icon: <FaBook className="text-2xl" />,
