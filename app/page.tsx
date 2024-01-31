@@ -9,10 +9,10 @@ export default function Home() {
             <div className="min-h-3/4 static flex justify-center bg-slate-600 p-5 rounded-lg mb-20">
                 <header className="static bottom-0 left-0 rounded-lg min-h-96 w-full">
                     <div className="mt-32 py-3 lg:w-1/2 space-y-5">
-                        <h1 className="text-6xl font-bold">
+                        <h1 className="md:text-6xl text-3xl font-bold">
                             Hi, I&apos;m Alfazh
                         </h1>
-                        <p className="text-xl text-justify">
+                        <p className="md:text-xl text-sm">
                             I&apos;m a Front End Developer from Surabaya.
                             Personaly I&apos;m using NextJs and Tailwind for My
                             Project. I&apos;m a student at State University of

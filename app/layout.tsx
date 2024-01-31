@@ -25,7 +25,7 @@ export default function RootLayout({
         >
             <body className={mavenPro.className}>
                 <Navbar />
-                <main className="pt-32 pb-20 mx-auto lg:w-3/4 w-5/6 justify-center items-center">
+                <main className="pt-32 pb-20 mx-auto lg:w-3/4 md:w-5/6 w-lvw justify-center items-center">
                     {children}
                 </main>
                 <Footer />
