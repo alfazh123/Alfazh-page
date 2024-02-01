@@ -7,7 +7,7 @@ import db from "@/app/lib/db.json";
 export default function Books() {
     const [active, setActive] = useState(1);
     return (
-        <div>
+        <div className="px-4">
             <h1>Books</h1>
             <ul className="flex relative md:flex-row flex-col gap-4">
                 {db.books.map((book, id) => (
