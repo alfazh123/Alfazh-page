@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Skill from "./hobby/skill";
 
@@ -7,23 +8,75 @@ export default function Hobby() {
             <div className=" h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg">
                 <Skill />
             </div>
-            <Link
-                href="/art"
-                className=" h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg lg:col-span-2"
-            >
-                <h2>Art</h2>
-            </Link>
-            <div className="bg-slate-600 items-center justify-center flex flex-col  h-40 w-full rounded-lg lg:col-span-2">
-                <h2>Blog</h2>
-                <h2 className="text-6xl">🗒️</h2>
+            <div className="relative lg:col-span-2">
+                <div className="absolute w-full h-40">
+                    <Image
+                        src="/hobby/bg-art.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="object-cover w-full h-full rounded-lg grayscale"
+                    />
+                </div>
+                <Link
+                    href="/art"
+                    className="absolute h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                >
+                    <h2>Art</h2>
+                    <Image
+                        src="/hobby/art.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="w-20"
+                    />
+                </Link>
             </div>
-            <Link
-                href="/about/books"
-                className="bg-slate-600 items-center justify-center flex flex-col  h-40 w-full rounded-lg"
-            >
-                <h2>Books</h2>
-                <p className="text-6xl">📚</p>
-            </Link>
+            <div className="relative lg:col-span-2">
+                <div className="h-40 w-full absolute ">
+                    <Image
+                        src="/hobby/bg-art.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="object-cover w-full h-full rounded-lg grayscale"
+                    />
+                </div>
+                <div className="bg-slate-600 absolute items-center justify-center flex flex-col  h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700">
+                    <h2>Blog</h2>
+                    <Image
+                        src="/hobby/blog.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="w-20"
+                    />
+                </div>
+            </div>
+            <div className="relative">
+                <div className="h-40 w-full absolute">
+                    <Image
+                        src="/hobby/bg-art.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="object-cover w-full h-full rounded-lg grayscale"
+                    />
+                </div>
+                <Link
+                    href="/about/books"
+                    className="bg-slate-600 items-center absolute justify-center flex flex-col h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                >
+                    <h2>Books</h2>
+                    <Image
+                        src="/hobby/book.png"
+                        alt="Picture of the author"
+                        width={300}
+                        height={300}
+                        className="w-20"
+                    />
+                </Link>
+            </div>
         </div>
     );
 }
