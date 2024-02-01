@@ -8,8 +8,8 @@ export default function Hobby() {
             <div className=" h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg">
                 <Skill />
             </div>
-            <div className="relative lg:col-span-2">
-                <div className="absolute w-full h-40">
+            <div className="md:relative lg:col-span-2">
+                <div className="md:absolute w-full h-40 md:block hidden">
                     <Image
                         src="/hobby/bg-art.png"
                         alt="Picture of the author"
@@ -20,7 +20,7 @@ export default function Hobby() {
                 </div>
                 <Link
                     href="/art"
-                    className="absolute h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                    className="md:absolute h-40 w-full bg-slate-600 items-center justify-center flex flex-col rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
                 >
                     <h2>Art</h2>
                     <Image
@@ -32,8 +32,8 @@ export default function Hobby() {
                     />
                 </Link>
             </div>
-            <div className="relative lg:col-span-2">
-                <div className="h-40 w-full absolute ">
+            <div className="md:relative lg:col-span-2">
+                <div className="h-40 w-full absolute md:block hidden">
                     <Image
                         src="/hobby/bg-art.png"
                         alt="Picture of the author"
@@ -42,7 +42,7 @@ export default function Hobby() {
                         className="object-cover w-full h-full rounded-lg grayscale"
                     />
                 </div>
-                <div className="bg-slate-600 absolute items-center justify-center flex flex-col  h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700">
+                <div className="bg-slate-600 md:absolute items-center justify-center flex flex-col  h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700">
                     <h2>Blog</h2>
                     <Image
                         src="/hobby/blog.png"
@@ -53,8 +53,8 @@ export default function Hobby() {
                     />
                 </div>
             </div>
-            <div className="relative">
-                <div className="h-40 w-full absolute">
+            <div className="md:relative">
+                <div className="h-40 w-full md:absolute md:block hidden">
                     <Image
                         src="/hobby/bg-art.png"
                         alt="Picture of the author"
@@ -65,7 +65,7 @@ export default function Hobby() {
                 </div>
                 <Link
                     href="/about/books"
-                    className="bg-slate-600 items-center absolute justify-center flex flex-col h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                    className="bg-slate-600 items-center md:absolute justify-center flex flex-col h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
                 >
                     <h2>Books</h2>
                     <Image
