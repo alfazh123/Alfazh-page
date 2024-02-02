@@ -2,7 +2,7 @@
 
 import Book from "@/app/ui/about/books/book";
 import { useState } from "react";
-import db from "@/app/lib/db.json";
+import { db } from "@/app/lib/db";
 
 export default function Books() {
     const [active, setActive] = useState(1);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import db from "@/app/lib/db.json";
+import { db } from "@/app/lib/db";
 
 export default function Art() {
     return (

@@ -1,5 +1,5 @@
 import ProjectCard from "../ui/project-card";
-import db from "@/app/lib/db.json";
+import { db } from "@/app/lib/db";
 
 export default function Project() {
     return (

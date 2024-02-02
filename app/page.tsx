@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "./ui/project-card";
-import db from "@/app/lib/db.json";
+import { db } from "@/app/lib/db";
 import Hobby from "./ui/hobby";
 import { FaArrowDown } from "react-icons/fa";
 
