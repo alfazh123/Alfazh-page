@@ -17,7 +17,7 @@ export default function Art() {
                         alt={art.title}
                         width={500}
                         height={500}
-                        className="w-full h-full aspect-auto rounded-lg bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
+                        className="w-full h-full aspect-auto rounded-lg dark:bg-slate-500 break-inside-avoid hover:scale-105 transition ease-in-out duration-300"
                     />
                 ))}
             </div>

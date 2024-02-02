@@ -42,7 +42,7 @@ export default function Book({
                 type="button"
                 data-ripple-light="true"
                 data-dialog-target={`"${id}"`}
-                className="bg-slate-600 md:rounded-lg rounded-xl md:h-80 h-full w-full"
+                className="dark:bg-slate-600 bg-slate-300 md:rounded-lg rounded-xl md:h-80 h-full w-full"
                 onClick={openModal}
             >
                 <Image
@@ -50,7 +50,7 @@ export default function Book({
                     alt={title}
                     width={500}
                     height={500}
-                    className={`w-full aspect-auto rounded-md bg-slate-700 h-full object-cover object-left md:block hidden`}
+                    className={`w-full aspect-auto rounded-md dark:bg-slate-700 h-full object-cover object-left md:block hidden`}
                 />
                 <div className="md:hidden block my-5">
                     <Image
