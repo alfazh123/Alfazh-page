@@ -8,21 +8,18 @@ import { FaArrowDown } from "react-icons/fa";
 export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
-            <div className="min-h-3/4 flex justify-center dark:bg-slate-600 p-5 rounded-lg mb-20">
-                <header className="rounded-lg min-h-96 w-full md:flex md:justify-between sm:grid sm:grid-cols-2 flex flex-col-reverse">
+            <div className="min-h-3/4 flex sm:justify-center p-5 rounded-lg mb-20">
+                <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse">
                     <div className="flex flex-col justify-center md:w-1/2">
                         <div className="py-3 space-y-5">
                             <h1 className="md:text-6xl text-3xl font-bold">
                                 Hi, I&apos;m Alfazh
                             </h1>
-                            <p className="md:text-xl text-sm">
+                            <p className="md:text-xl text-base">
                                 I&apos;m a Front End Developer from Surabaya.
                                 Personaly I&apos;m using NextJs and Tailwind for
                                 My Project. I&apos;m a student at State
-                                University of Surabaya, I&apos;m currently
-                                learning about Web Development and BackEnd
-                                Development. Fell free to contact me if you want
-                                to work with. 😁
+                                University of Surabaya.
                             </p>
                         </div>
                         <Link href="/about">
@@ -31,25 +28,22 @@ export default function Home() {
                             </button>
                         </Link>
                     </div>
-                    <div className="flex justify-center items-center">
+                    <div className="flex md:justify-center items-center">
                         <Image
                             src="/profil.jpg"
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className="rounded-xl md:w-96 sm:w-72 w-40"
+                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 border-slate-200 md:hover:shadow-2xl cursor-pointer md:hover:scale-90 md:hover:bg-slate-600 md:hover:p-2 md:hover:transition-all duration-700 ease-in-out"
                         />
                     </div>
                 </header>
             </div>
 
-            <Link
-                href="#content"
-                className="flex justify-center items-center mb-10"
-            >
+            <Link href="#content" className="flex justify-center items-center">
                 <FaArrowDown className="text-4xl text-slate-600 cursor-pointer animate-bounce" />
             </Link>
-            <div className="h-32" id="content"></div>
+            <div className="h-20" id="content"></div>
             <div className="space-y-2 mb-10">
                 <h3 className="text-2xl font-semibold">Some Project</h3>
                 <p className="text-gray-500">
@@ -75,19 +69,12 @@ export default function Home() {
                 </div>
             </div>
 
-            <h1 className="font-semibold text-2xl mt-10">Some of My Hobby</h1>
-            <Hobby />
-
-            {/* <div className="flex flex-col space-y-4">
-                <h3 className="text-lg font-semibold">Skills</h3>
-                <div className="flex flex-wrap gap-5">
-                    {skills.map(({ skill }) => (
-                        <Skill key={skill} skill={skill} />
-                    ))}
-                </div>
-            </div> */}
-
-            {/* </div> */}
+            <div className="flex flex-col md:h-96 md:mb-20">
+                <h1 className="font-semibold text-2xl mt-10">
+                    Some of My Hobby
+                </h1>
+                <Hobby />
+            </div>
         </main>
     );
 }
