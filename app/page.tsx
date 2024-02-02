@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
             <div className="min-h-3/4 flex justify-center dark:bg-slate-600 p-5 rounded-lg mb-20">
-                <header className="rounded-lg min-h-96 w-full flex justify-between">
+                <header className="rounded-lg min-h-96 w-full md:flex md:justify-between sm:grid sm:grid-cols-2 flex flex-col-reverse">
                     <div className="flex flex-col justify-center md:w-1/2">
                         <div className="py-3 space-y-5">
                             <h1 className="md:text-6xl text-3xl font-bold">
@@ -31,13 +31,13 @@ export default function Home() {
                             </button>
                         </Link>
                     </div>
-                    <div>
+                    <div className="flex justify-center items-center">
                         <Image
                             src="/profil.jpg"
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className=" rounded-xl w-96 md:block hidden"
+                            className="rounded-xl md:w-96 sm:w-72 w-40"
                         />
                     </div>
                 </header>
