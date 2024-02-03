@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { FaGithub, FaHome, FaHammer, FaQuestion, FaBook } from "react-icons/fa";
+import {
+    FaGithub,
+    FaHome,
+    FaHammer,
+    FaQuestion,
+    FaBook,
+    FaMoon,
+    FaSun,
+} from "react-icons/fa";
+import ThemeButton from "./theme-button";
 
 const links = [
     {
@@ -42,9 +51,7 @@ export default function Navbar() {
                 ))}
             </ul>
             <div className="flex md:px-16 px-4 py-5">
-                <a href="https://github.com/alfazh123">
-                    <FaGithub className="text-3xl" />
-                </a>
+                <ThemeButton />
             </div>
         </div>
     );
