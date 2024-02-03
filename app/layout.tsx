@@ -3,7 +3,6 @@ import { Inter, Source_Code_Pro, Maven_Pro } from "next/font/google";
 import "./globals.css";
 import Navbar from "./ui/navbar";
 import Footer from "./ui/footer";
-import ThemeButton from "./ui/theme-button";
 
 const inter = Inter({ subsets: ["latin"] });
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
