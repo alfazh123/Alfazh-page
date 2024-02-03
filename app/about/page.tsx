@@ -18,19 +18,55 @@ export default function About() {
                     <br />I enjoy to learn something new and work with so i can
                     have other opinion about something, and i hope i can help
                     someone with my work. I&apos;m also like doing art like
-                    drawing digital or traditional. You can see my art and my
-                    blog on this website.
+                    drawing digital or traditional. You can see my art 🎨 and my
+                    blog 🗒️ on this website.
                 </p>
             </div>
 
-            <div>
-                <h2>Photo&apos;s</h2>
-                <p></p>
-            </div>
+            {/* <div>
+                <h3>Uses</h3>
+                <p>
+                    Here are some of the technologies that I use and some of the
+                    tools that I use to make my project.
+                </p>
+                <div>
+                    <h4>Front End</h4>
+                    <ul>
+                        <li>NextJs</li>
+                        <li>Tailwind</li>
+                        <li>React</li>
+                    </ul>
 
-            <Link href="/about/books">
-                <button>Books</button>
-            </Link>
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                        <li>Lenovo Ideapad 3 15ARE05</li>
+                        <li>Samsung Galaxy A12</li>
+                    </ul>
+
+                    <h4>Others</h4>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                    </ul>
+
+                    <h4>Interest</h4>
+                    <ul>
+                        <li>Art</li>
+                        <li>Design</li>
+                    </ul>
+
+                    <h4>Other</h4>
+                    <ul>
+                        <li>Music</li>
+                        <li>Game</li>
+                    </ul>
+                </div>
+            </div> */}
         </div>
     );
 }
