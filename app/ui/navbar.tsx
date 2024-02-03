@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-    FaGithub,
-    FaHome,
-    FaHammer,
-    FaQuestion,
-    FaPaintRoller,
-    FaBook,
-} from "react-icons/fa";
+import { FaGithub, FaHome, FaHammer, FaQuestion, FaBook } from "react-icons/fa";
 
 const links = [
     {
@@ -24,11 +17,11 @@ const links = [
         label: "About",
         icon: <FaQuestion className="text-2xl" />,
     },
-    {
-        href: "/guest-book",
-        label: "Guest Book",
-        icon: <FaBook className="text-2xl" />,
-    },
+    // {
+    //     href: "/guest-book",
+    //     label: "Guest Book",
+    //     icon: <FaBook className="text-2xl" />,
+    // },
 ];
 
 export default function Navbar() {
