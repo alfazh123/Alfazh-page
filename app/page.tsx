@@ -34,7 +34,7 @@ export default function Home() {
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 border-slate-200 md:hover:shadow-2xl cursor-pointer md:hover:scale-90 md:hover:bg-slate-600 md:hover:p-2 md:hover:transition-all duration-700 ease-in-out"
+                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 border-slate-200 md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-slate-300 md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
                         />
                     </div>
                 </header>

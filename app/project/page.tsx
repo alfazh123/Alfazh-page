@@ -3,11 +3,11 @@ import { db } from "@/app/lib/db";
 
 export default function Project() {
     return (
-        <div className="min-h-screen flex flex-col space-y-20 px-4">
+        <div className="flex flex-col space-y-20 px-4">
             <h1 className="font-bold text-6xl">Project</h1>
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
                 {db.projects.map((project, index) => (
-                    <div key={index} className="snap-center shrink-0">
+                    <div key={index}>
                         <ProjectCard
                             title={project.title}
                             description={project.description}
