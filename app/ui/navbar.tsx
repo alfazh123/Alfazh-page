@@ -14,17 +14,14 @@ const links = [
     {
         href: "/",
         label: "Home",
-        icon: <FaHome className="text-2xl" />,
     },
     {
         href: "/project",
         label: "Project",
-        icon: <FaHammer className="text-2xl" />,
     },
     {
         href: "/about",
         label: "About",
-        icon: <FaQuestion className="text-2xl" />,
     },
     // {
     //     href: "/guest-book",
@@ -36,15 +33,12 @@ const links = [
 export default function Navbar() {
     return (
         <div className="fixed flex justify-between w-full backdrop-blur-md z-10">
-            <ul className="md:px-16 flex px-4 py-5">
-                {links.map(({ href, label, icon }) => (
+            <ul className="md:px-16 flex px-4 py-5 justify-center items-center">
+                {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                         <Link href={href}>
-                            <p className="hover:underline px-3 sm:flex hidden">
+                            <p className="hover:underline px-3 md:text-base text-sm">
                                 {label}
-                            </p>
-                            <p className="hover:underline px-3 sm:hidden flex">
-                                {icon}
                             </p>
                         </Link>
                     </li>
