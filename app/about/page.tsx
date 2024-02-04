@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Skill from "../ui/hobby/skill";
 
 export default function About() {
     return (
         <div className="px-4">
-            <div className="mb-4">
+            <div className="mb-10">
                 <h1 className="text-3xl font-bold">Hi, I&apos;m Alfazh</h1>
                 <h2 className="text-xl font-bold mb-4">
                     Front End Developer from Surabaya
@@ -21,6 +22,81 @@ export default function About() {
                     drawing digital or traditional. You can see my art 🎨 and my
                     blog 🗒️ on this website.
                 </p>
+            </div>
+
+            <div className="md:grid md:grid-cols-2 flex flex-col gap-5">
+                <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
+                    <h3 className="text-lg font-semibold">Tech Tools</h3>
+                    <div className="flex justify-center items-center">
+                        <Skill />
+                    </div>
+                </div>
+                <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
+                    <h3 className="text-lg font-semibold">Uses</h3>
+                    <ul>
+                        <li>Lenovo Ideapad 3 15ARE05</li>
+                        <li>Samsung A12</li>
+                    </ul>
+                </div>
+                <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
+                    <h3 className="text-lg font-semibold">Music</h3>
+                    <ul>
+                        <li>Music 1</li>
+                        <li>Music 2</li>
+                        <li>Music 3</li>
+                        <li>Music 4</li>
+                        <li>Music 5</li>
+                    </ul>
+                </div>
+                <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
+                    <h3 className="text-lg font-semibold">Interest or hobby</h3>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Design</li>
+                        <li>Write Blogs</li>
+                    </ul>
+                </div>
+                <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md col-span-2">
+                    <h3 className="text-lg font-semibold">Photo&apos;s</h3>
+                    <ul className="flex gap-5 snap-x overflow-scroll snap-mandatory">
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            1
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            2
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            3
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            4
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            1
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            2
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            3
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            4
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            1
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            2
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            3
+                        </li>
+                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                            4
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             {/* <div>
