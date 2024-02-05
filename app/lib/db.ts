@@ -59,4 +59,17 @@ export const db = {
             "image-url": "/art2.png",
         },
     ],
+    uses: ["Lenovo Ideapad 3 15ARE05", "Samsung A12"],
+    interest: ["Web Development", "Design", "Write Blogs"],
+    music: [
+        {
+            link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
+        },
+        {
+            link: "https://open.spotify.com/embed/track/2LBqCSwhJGcFQeTHMVGwy3?utm_source=generator",
+        },
+        {
+            link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
+        },
+    ],
 };

@@ -8,7 +8,7 @@ import { FaArrowDown } from "react-icons/fa";
 export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
-            <div className="min-h-3/4 flex sm:justify-center p-5 rounded-lg mb-20">
+            <div className="min-h-3/4 flex sm:justify-center py-5 rounded-lg mb-20">
                 <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse">
                     <div className="flex flex-col justify-center md:w-1/2">
                         <div className="py-3 space-y-5">
