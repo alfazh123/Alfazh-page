@@ -10,17 +10,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 56,
+      30,112;
+    --background-start-rgb: 234,
+      247,
+      223;
+    --background-end-rgb: 234,
+      247,
+      223;
   }
 
   .dark {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 234,
+      247,
+      223;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+/* rgb(42, 2, 65) */
+/* rgb(254, 93, 39) */
+/* rgb(188, 253, 85) */
+/* rgb(241, 0, 136) */
 
 body {
   color: rgb(var(--foreground-rgb));
