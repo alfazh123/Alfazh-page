@@ -1,5 +1,24 @@
 import Link from "next/link";
 import Skill from "../ui/hobby/skill";
+import CardList from "../ui/about/card-list";
+import MusicCard from "../ui/about/music-card";
+import { db } from "../lib/db";
+
+const uses = ["Lenovo Ideapad 3 15ARE05", "Samsung A12"];
+
+const interest = ["Web Development", "Design", "Write Blogs"];
+
+const music = [
+    {
+        link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
+    },
+    {
+        link: "https://open.spotify.com/embed/track/2LBqCSwhJGcFQeTHMVGwy3?utm_source=generator",
+    },
+    {
+        link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
+    },
+];
 
 export default function About() {
     return (
@@ -33,32 +52,19 @@ export default function About() {
                 </div>
                 <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Uses</h3>
-                    <ul>
-                        <li>Lenovo Ideapad 3 15ARE05</li>
-                        <li>Samsung A12</li>
-                    </ul>
+                    <CardList list={db.uses} />
                 </div>
                 <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Music</h3>
-                    <ul>
-                        <li>Music 1</li>
-                        <li>Music 2</li>
-                        <li>Music 3</li>
-                        <li>Music 4</li>
-                        <li>Music 5</li>
-                    </ul>
+                    <MusicCard music={db.music} />
                 </div>
                 <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Interest or hobby</h3>
-                    <ul>
-                        <li>Web Development</li>
-                        <li>Design</li>
-                        <li>Write Blogs</li>
-                    </ul>
+                    <CardList list={db.interest} />
                 </div>
                 <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md col-span-2">
                     <h3 className="text-lg font-semibold">Photo&apos;s</h3>
-                    <ul className="flex gap-5 snap-x overflow-scroll snap-mandatory">
+                    <ul className="flex gap-5 snap-x overflow-x-auto snap-mandatory [&_li]:mb-2">
                         <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             1
                         </li>
