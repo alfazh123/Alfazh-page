@@ -16,6 +16,10 @@ const links = [
         label: "Home",
     },
     {
+        href: "/blog",
+        label: "Blog",
+    },
+    {
         href: "/project",
         label: "Project",
     },
@@ -37,7 +41,7 @@ export default function Navbar() {
                 {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
                         <Link href={href}>
-                            <p className="hover:underline px-3 md:text-base text-sm">
+                            <p className="hover:underline px-3 md:text-base sm:text-sm text-xs">
                                 {label}
                             </p>
                         </Link>
