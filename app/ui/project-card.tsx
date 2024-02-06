@@ -17,7 +17,7 @@ export default function ProjectCard({
     tag,
 }: ProjectCardProps) {
     return (
-        <div className="flex flex-col dark:bg-slate-800 bg-[#DFD8BC] shadow-2xl transition ease-in-out delay-150  hover:scale-105  duration-300 w-full rounded-lg">
+        <div className="group flex flex-col dark:bg-slate-800 bg-[#DFD8BC] shadow-2xl transition ease-in-out delay-150  hover:scale-105  duration-300 w-full rounded-lg">
             <Link href={href} className="m-2">
                 <Image
                     src={src}
@@ -26,8 +26,11 @@ export default function ProjectCard({
                     height={500}
                     className="w-full aspect-auto rounded-md "
                 />
-                <div className="items-center ">
-                    <h3 className="text-lg font-bold my-3 mx-1">{title}</h3>
+                <div className="items-center">
+                    <h3 className="text-lg font-bold mt-3 mx-1 group-hover:underline">
+                        {title}
+                    </h3>
+                    <p className="text-sm mx-1 mb-3">{description}</p>
                     <div className="justify-between mb-4">
                         {tag?.map((tag) => (
                             <p

@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
             <div className="min-h-3/4 flex sm:justify-center py-5 rounded-lg mb-20">
-                <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse">
+                <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse transition-all ease-in-out duration-500">
                     <div className="flex flex-col justify-center md:w-1/2">
                         <div className="py-3 space-y-5">
                             <h1 className="md:text-6xl text-3xl font-bold">
@@ -56,11 +56,11 @@ export default function Home() {
                         </div>
                     ))}
                     <Link href="/project">
-                        <div className="dark:bg-slate-600 rounded-lg p-5 h-full flex flex-col justify-center items-center">
+                        <div className="group dark:bg-slate-600 border-solid border-2 border-[#381E70] dark:border-0 rounded-lg p-5 h-full flex flex-col justify-center items-center">
                             <h3 className="text-2xl font-semibold">
                                 More Project
                             </h3>
-                            <p className="text-gray-500">
+                            <p className="text-gray-500 group-hover:underline">
                                 You can see more project on my github
                             </p>
                             <p>See more</p>
