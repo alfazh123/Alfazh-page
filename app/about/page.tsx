@@ -44,25 +44,25 @@ export default function About() {
             </div>
 
             <div className="md:grid md:grid-cols-2 flex flex-col gap-5">
-                <div className="bg-[#DFD8CB] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Tech Tools</h3>
                     <div className="flex justify-center items-center">
                         <Skill />
                     </div>
                 </div>
-                <div className="bg-[#DFD8CB] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Uses</h3>
                     <CardList list={db.uses} />
                 </div>
-                <div className="bg-[#DFD8CB] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Music</h3>
                     <MusicCard music={db.music} />
                 </div>
-                <div className="bg-[#DFD8CB] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Interest or hobby</h3>
                     <CardList list={db.interest} />
                 </div>
-                <div className="bg-[#DFD8CB] dark:bg-slate-800 p-4 rounded-md col-span-2">
+                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md col-span-2">
                     <h3 className="text-lg font-semibold">Photo&apos;s</h3>
                     <ul className="flex gap-5 snap-x overflow-x-auto snap-mandatory [&_li]:mb-2">
                         <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
