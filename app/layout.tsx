@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className="relative dark max-w-[1600px] justify-center items-center"
+            className="relative dark max-w-[1600px] flex mx-auto transition-all duration-300 ease-in-out delay-150"
         >
             <body className={mavenPro.className}>
                 <Navbar />

@@ -36,7 +36,7 @@ const links = [
 
 export default function Navbar() {
     return (
-        <div className="fixed flex justify-between w-full backdrop-blur-md z-10">
+        <div className="fixed flex justify-between w-full backdrop-blur-md z-10 max-w-[1600px]">
             <ul className="md:px-16 flex px-4 py-5 justify-center items-center">
                 {links.map(({ href, label }) => (
                     <li key={`${href}${label}`}>
