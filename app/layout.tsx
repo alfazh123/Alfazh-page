@@ -19,10 +19,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html
-            lang="en"
-            className="relative dark max-w-[1600px] flex mx-auto transition-all duration-300 ease-in-out delay-150"
-        >
+        <html lang="en" className="relative dark lg:max-w-[1600px] mx-auto">
             <body className={mavenPro.className}>
                 <Navbar />
                 <main className="pt-32 pb-20 mx-auto lg:w-3/4 md:w-5/6 w-11/12 justify-center items-center">

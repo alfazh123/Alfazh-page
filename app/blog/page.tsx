@@ -24,7 +24,7 @@ export default function Blog() {
     return (
         <div>
             <h1 className="font-bold text-3xl mb-4">Blog</h1>
-            <ul className="md:grid md:grid-cols-3 gap-4 flex flex-col">
+            <ul className="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-4 flex flex-col">
                 {blogs.map((blog) => (
                     <li key={blog.slug}>
                         <CardBlog
