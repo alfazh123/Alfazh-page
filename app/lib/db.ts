@@ -66,10 +66,16 @@ export const db = {
             link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
         },
         {
-            link: "https://open.spotify.com/embed/track/2LBqCSwhJGcFQeTHMVGwy3?utm_source=generator",
+            link: "https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW?utm_source=generator",
         },
         {
-            link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
+            link: "https://open.spotify.com/embed/track/5hM5arv9KDbCHS0k9uqwjr?utm_source=generator",
+        },
+        {
+            link: "https://open.spotify.com/embed/track/7AQJDPy0nxjcqda1T9f5wX?utm_source=generator",
+        },
+        {
+            link: "https://open.spotify.com/embed/track/1fpT3GrNKcATkICSWw6KHp?utm_source=generator",
         },
     ],
 };

@@ -91,7 +91,7 @@ export default function Book({
                             alt={title}
                             width={500}
                             height={500}
-                            className="w-96 aspect-auto rounded-md h-full  bg-slate-700 "
+                            className="sm:w-96 w-40 aspect-auto rounded-md smh-full  bg-slate-700 "
                         />
                         <div className="space-y-2">
                             <div>
