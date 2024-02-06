@@ -19,7 +19,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="relative dark">
+        <html
+            lang="en"
+            className="relative dark max-w-[1600px] justify-center items-center"
+        >
             <body className={mavenPro.className}>
                 <Navbar />
                 <main className="pt-32 pb-20 mx-auto lg:w-3/4 md:w-5/6 w-11/12 justify-center items-center">
