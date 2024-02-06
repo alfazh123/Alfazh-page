@@ -17,7 +17,7 @@ export default function ProjectCard({
     tag,
 }: ProjectCardProps) {
     return (
-        <div className="flex flex-col dark:bg-slate-800 shadow-2xl transition ease-in-out delay-150 border-solid border-2 hover:scale-105 border-slate-600 hover:border-slate-400 duration-300 w-full rounded-lg">
+        <div className="flex flex-col dark:bg-slate-800 bg-[#DFD8BC] shadow-2xl transition ease-in-out delay-150  hover:scale-105  duration-300 w-full rounded-lg">
             <Link href={href} className="m-2">
                 <Image
                     src={src}
@@ -32,7 +32,7 @@ export default function ProjectCard({
                         {tag?.map((tag) => (
                             <p
                                 key={tag}
-                                className="border-solid border-2 font-semibold border-slate-200 px-2 py-1 rounded-md text-sm inline-block mx-1"
+                                className="border-solid border-2 font-semibold dark:border-slate-200 border-[#381E70] px-2 py-1 rounded-md text-sm inline-block mx-1"
                             >
                                 {tag}
                             </p>

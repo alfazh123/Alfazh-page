@@ -23,7 +23,7 @@ export default function Home() {
                             </p>
                         </div>
                         <Link href="/about">
-                            <button className=" border-solid border-2 dark:border-slate-200 border-[#381E70] hover:overflow-hidden dark:hover:bg-slate-200 hover:bg-[#381E70] hover:text-[#EAF7DF] dark:hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300  px-3 py-2 rounded-lg">
+                            <button className=" border-solid border-2 dark:border-[#EAF7DF] border-[#381E70] hover:overflow-hidden dark:hover:bg-[#EAF7DF] hover:bg-[#381E70] hover:text-[#EAF7DF] dark:hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300 px-3 py-2 rounded-lg">
                                 About Me
                             </button>
                         </Link>
@@ -34,7 +34,7 @@ export default function Home() {
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-[#381E70] md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-slate-300 md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
+                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-[#381E70] md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-[#381E70] md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
                         />
                     </div>
                 </header>

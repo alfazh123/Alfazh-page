@@ -6,7 +6,7 @@ interface MusicCardProps {
 
 export default function MusicCard({ music }: MusicCardProps) {
     return (
-        <div className="bg-slate-200 dark:bg-slate-800 rounded-md">
+        <div className="rounded-md">
             <ul className="snap-y snap-mandatory overflow-y-auto h-40 [&_li]:my-4">
                 {music.map((item, index) => (
                     <li className="snap-center flex" key={index}>

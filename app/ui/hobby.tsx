@@ -5,7 +5,7 @@ import Skill from "./hobby/skill";
 export default function Hobby() {
     return (
         <div className="grid lg:grid-cols-3 md:grid-cols-2 mt-4 gap-4">
-            <div className=" h-40 w-full dark:bg-slate-600 bg-slate-300 items-center justify-center flex flex-col rounded-lg">
+            <div className=" h-40 w-full dark:bg-slate-600 bg-[#DFD8CB] items-center justify-center flex flex-col rounded-lg">
                 <Skill />
             </div>
             <div className="md:relative lg:col-span-2">
@@ -20,7 +20,7 @@ export default function Hobby() {
                 </div>
                 <Link
                     href="/art"
-                    className="md:absolute h-40 w-full dark:bg-slate-600 bg-slate-300 items-center justify-center flex flex-col rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                    className="md:absolute h-40 w-full dark:bg-slate-600 bg-[#DFD8CB] items-center justify-center flex flex-col rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
                 >
                     <h2>Art</h2>
                     <Image
@@ -42,7 +42,7 @@ export default function Hobby() {
                         className="object-cover w-full h-full rounded-lg grayscale"
                     />
                 </div>
-                <div className="dark:bg-slate-600 bg-slate-300 md:absolute items-center justify-center flex flex-col  h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700">
+                <div className="dark:bg-slate-600 bg-[#DFD8CB] md:absolute items-center justify-center flex flex-col  h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700">
                     <h2>Blog</h2>
                     <Image
                         src="/hobby/blog.png"
@@ -65,7 +65,7 @@ export default function Hobby() {
                 </div>
                 <Link
                     href="/about/books"
-                    className="dark:bg-slate-600 bg-slate-300 items-center md:absolute justify-center flex flex-col h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
+                    className="dark:bg-slate-600 bg-[#DFD8CB] items-center md:absolute justify-center flex flex-col h-40 w-full rounded-lg hover:opacity-90 hover:ease-in-out hover:transition-all duration-700"
                 >
                     <h2>Books</h2>
                     <Image

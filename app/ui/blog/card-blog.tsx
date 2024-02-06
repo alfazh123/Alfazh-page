@@ -16,7 +16,7 @@ export default function CardBlog({
     tag,
 }: CardBlogProps) {
     return (
-        <div className="bg-slate-400 dark:bg-slate-900 p-4 rounded-lg">
+        <div className=" border-solid border-2 dark:border-slate-200 border-[#381E70]  p-4 rounded-lg ">
             <Link href={link} className="">
                 <div className="space-y-4">
                     <div>
@@ -24,7 +24,7 @@ export default function CardBlog({
                         <p>{description}</p>
                         <p className="text-sm text-slate-400">{date}</p>
                     </div>
-                    <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border-2 [&_p]:border-slate-200 [&_p]:rounded-md gap-2 ">
+                    <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border-2 [&_p]:border-[#381E70] dark:[&_p]:border-slate-200 [&_p]:rounded-md gap-2 ">
                         {tag?.map((tag) => (
                             <p key={tag}>{tag}</p>
                         ))}
