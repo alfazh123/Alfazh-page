@@ -16,25 +16,41 @@ export async function generateStaticParams() {
     return paths;
 }
 
-type Props = {
-    params: { title: string };
-};
+// export async function generateMetaData({ slug }: { slug: string }) {
+//     const markDownFile = fs.readFileSync(
+//         path.join("blog", `${slug}.mdx`),
+//         "utf-8"
+//     );
 
-export async function generateMetaData({ slug }: { slug: string }) {
-    const markDownFile = fs.readFileSync(
-        path.join("blog", `${slug}.mdx`),
-        "utf-8"
-    );
+//     const { data: fronMatter } = matter(markDownFile);
+//     console.log(fronMatter.title);
 
-    const { data: fronMatter } = matter(markDownFile);
-    console.log(fronMatter.title);
+//     const metadata: Metadata = {
+//         title: fronMatter.title,
+//     };
 
-    const metadata: Metadata = {
-        title: fronMatter.title,
-    };
+//     return metadata.title;
+// }
 
-    return metadata.title;
-}
+// export async function generateMetaData({
+//     slug,
+// }: {
+//     slug: string;
+// }): Promise<Metadata> {
+//     const markDownFile = fs.readFileSync(
+//         path.join("blog", `${slug}.mdx`),
+//         "utf-8"
+//     );
+
+//     const { data: fronMatter } = matter(markDownFile);
+//     console.log(fronMatter.title);
+
+//     const metadata: Metadata = {
+//         title: fronMatter.title,
+//     };
+
+//     return metadata;
+// }
 
 function getPost({ slug }: { slug: string }) {
     const markDownFile = fs.readFileSync(
