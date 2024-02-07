@@ -16,6 +16,26 @@ export async function generateStaticParams() {
     return paths;
 }
 
+type Props = {
+    params: { title: string };
+};
+
+export async function generateMetaData({ slug }: { slug: string }) {
+    const markDownFile = fs.readFileSync(
+        path.join("blog", `${slug}.mdx`),
+        "utf-8"
+    );
+
+    const { data: fronMatter } = matter(markDownFile);
+    console.log(fronMatter.title);
+
+    const metadata: Metadata = {
+        title: fronMatter.title,
+    };
+
+    return metadata.title;
+}
+
 function getPost({ slug }: { slug: string }) {
     const markDownFile = fs.readFileSync(
         path.join("blog", `${slug}.mdx`),
@@ -31,21 +51,8 @@ function getPost({ slug }: { slug: string }) {
     };
 }
 
-type Props = {
-    params: {
-        slug: string;
-    };
-};
-
-export const generateMetaData = ({ params }: Props): Metadata => {
-    return {
-        title: params.slug,
-    };
-};
-
 export default function Blog({ params }: any) {
     const props = getPost(params);
-
     return (
         <div>
             <article
