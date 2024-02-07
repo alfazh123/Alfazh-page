@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Head from "next/head";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
     const files = fs.readdirSync(path.join("blog"));
@@ -29,12 +31,25 @@ function getPost({ slug }: { slug: string }) {
     };
 }
 
+type Props = {
+    params: {
+        slug: string;
+    };
+};
+
+export const generateMetaData = ({ params }: Props): Metadata => {
+    return {
+        title: params.slug,
+    };
+};
+
 export default function Blog({ params }: any) {
     const props = getPost(params);
 
     return (
-        <article
-            className="flex flex-col prose 
+        <div>
+            <article
+                className="flex flex-col prose 
         dark:prose-h1:text-slate-300 
         dark:prose-h2:text-slate-300 
         dark:prose-h3:text-slate-300 
@@ -54,12 +69,13 @@ export default function Blog({ params }: any) {
         dark:hover:after:prose-headings:content-['🔗']
         dark:hover:prose-headings:underline
         dark:text-slate-200 prose-sm md:prose-base lg:prose-lg !prose-slate progress-invert m-auto"
-        >
-            <header className="border-solid border-b-2 dark:border-slate-200 border-slate-800">
-                <h1>{props.fronMatter.title}</h1>
-                <p>{props.fronMatter.date}</p>
-            </header>
-            <MDXRemote source={props.content} />
-        </article>
+            >
+                <header className="border-solid border-b-2 dark:border-slate-200 border-slate-800">
+                    <h1>{props.fronMatter.title}</h1>
+                    <p>{props.fronMatter.date}</p>
+                </header>
+                <MDXRemote source={props.content} />
+            </article>
+        </div>
     );
 }
