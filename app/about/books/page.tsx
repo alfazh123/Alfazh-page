@@ -3,6 +3,7 @@
 import Book from "@/app/ui/about/books/book";
 import { useState } from "react";
 import { db } from "@/app/lib/db";
+import { Metadata } from "next";
 
 export default function Books() {
     const [active, setActive] = useState(1);
