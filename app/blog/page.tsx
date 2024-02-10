@@ -2,6 +2,14 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import CardBlog from "../ui/blog/card-blog";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: {
+        template: " %s | Blog | Alfazh",
+        default: "Blog",
+    },
+};
 
 export default function Blog() {
     const blogDir = "blog";

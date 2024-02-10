@@ -3,6 +3,11 @@ import Skill from "../ui/hobby/skill";
 import CardList from "../ui/about/card-list";
 import MusicCard from "../ui/about/music-card";
 import { db } from "../lib/db";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About",
+};
 
 const uses = ["Lenovo Ideapad 3 15ARE05", "Samsung A12"];
 

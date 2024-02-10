@@ -1,5 +1,10 @@
 import Image from "next/image";
 import { db } from "@/app/lib/db";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Art",
+};
 
 export default function Art() {
     return (

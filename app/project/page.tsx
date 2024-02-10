@@ -1,5 +1,10 @@
 import ProjectCard from "../ui/project-card";
 import { db } from "@/app/lib/db";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Project",
+};
 
 export default function Project() {
     return (
