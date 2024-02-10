@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         template: " %s | Alfazh",
         default: "Alfazh",
     },
+    keywords: "Alfazh, Mufahras, Portfolio, Web, Developer",
     description: "A Portfolio Website by Alfazh",
     authors: [{ name: "Ahmd Mufahras Li Alfazh Assardew" }],
 };
