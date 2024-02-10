@@ -10,8 +10,8 @@ const mavenPro = Maven_Pro({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
     title: {
-        template: " %s | Alfazh",
-        default: "Alfazh",
+        template: " %s | Ahmd Mufahras Li Alfazh Assardew",
+        default: "Ahmd Mufahras Li Alfazh Assardew",
     },
     keywords: "Alfazh, Mufahras, Portfolio, Web, Developer",
     description: "A Portfolio Website by Alfazh",
