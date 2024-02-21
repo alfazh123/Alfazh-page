@@ -23,11 +23,11 @@ const links = [
         label: "ahmd_afazh",
         icon: <FaInstagram className="text-xl" />,
     },
-    // {
-    //   href: "https://github.com/alfazh123",
-    //   label: "Code",
-    //   icon: <FaLink className="text-xl" />,
-    // },
+    {
+        href: "https://github.com/alfazh123",
+        label: "Github",
+        icon: <FaGithub className="text-xl" />,
+    },
 ];
 
 export default function Footer() {
@@ -39,14 +39,11 @@ export default function Footer() {
                 <ul className="justify-between flex">
                     {links.map(({ href, label, icon }) => (
                         <li key={`${href}${label}`}>
-                            <Link href={href} className="flex">
+                            <a href={href} className="flex">
                                 <p className="pl-3 py-1 rounded-full hover:underline">
                                     {icon}
                                 </p>
-                                {/* <p className="pl-2 py-1 rounded-full hover:underline">
-                  {label}
-                </p> */}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
