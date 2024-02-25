@@ -39,3 +39,10 @@ export default function SideBar(SideBarProps: SideBarProps) {
         </div>
     );
 }
+
+export async function getParams() {
+    const searchParams = useSearchParams();
+    const tag = searchParams.get("tag");
+    console.log(tag);
+    return { tag };
+}

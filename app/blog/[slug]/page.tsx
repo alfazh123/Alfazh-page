@@ -119,9 +119,7 @@ export default function Blog({ params }: any) {
                 </header>
                 <MDXRemote source={props.content} />
                 <div>
-                    {props.fronMatter.tags.map((tag: any, index: any) => (
-                        <span key={index}>{tag}</span>
-                    ))}
+                    <span>{props.fronMatter.tag}</span>
                 </div>
             </article>
         </div>
