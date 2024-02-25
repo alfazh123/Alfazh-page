@@ -32,7 +32,7 @@ export default function ThemeButton() {
             title="Change theme"
         >
             <FaMoon className="md:text-lg text-sm dark:block hidden" />
-            <FaSun className="md:text-lg text-sm dark:hidden block" />
+            <FaSun className="md:text-lg text-sm hover:animate-spin dark:hidden block" />
         </button>
     );
 }

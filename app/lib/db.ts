@@ -78,4 +78,24 @@ export const db = {
             link: "https://open.spotify.com/embed/track/1fpT3GrNKcATkICSWw6KHp?utm_source=generator",
         },
     ],
+    hobby: [
+        {
+            title: "Book",
+            description: "Books i've read.",
+            image: "/bookcard.svg",
+            link: "/about/books",
+        },
+        {
+            title: "Blogs",
+            description: "Blogs",
+            image: "/blogcard.svg",
+            link: "/blog",
+        },
+        {
+            title: "Art",
+            description: "Art",
+            image: "",
+            link: "/art",
+        },
+    ],
 };
