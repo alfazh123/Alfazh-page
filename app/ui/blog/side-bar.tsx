@@ -1,7 +1,6 @@
 "use client";
 
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
-import Blog from "@/app/blog/page";
 
 interface SideBarProps {
     tags: string[];
@@ -38,11 +37,4 @@ export default function SideBar(SideBarProps: SideBarProps) {
             </div>
         </div>
     );
-}
-
-export async function getParams() {
-    const searchParams = useSearchParams();
-    const tag = searchParams.get("tag");
-    console.log(tag);
-    return { tag };
 }
