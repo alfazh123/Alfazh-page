@@ -3,12 +3,18 @@ import path from "path";
 import matter from "gray-matter";
 import CardBlog from "../ui/blog/card-blog";
 import { Metadata } from "next";
+import SideBar from "../ui/blog/side-bar";
 
 export const metadata: Metadata = {
     title: {
         template: " %s | Blog | Alfazh",
         default: "Blog",
     },
+};
+
+const tags = {
+    tag: ["JavaScript", "React", "Next.js", "TailwindCSS"],
+    link: ["#", "#", "#", "#"],
 };
 
 export default function Blog() {
@@ -32,19 +38,22 @@ export default function Blog() {
     return (
         <div>
             <h1 className="font-bold text-3xl mb-4">Blog</h1>
-            <ul className="sm:grid md:grid-cols-3 sm:grid-cols-2 gap-4 flex flex-col">
-                {blogs.map((blog) => (
-                    <li key={blog.slug}>
-                        <CardBlog
-                            title={blog.meta.title}
-                            description={blog.meta.description}
-                            date={blog.meta.date}
-                            link={`/blog/${blog.slug}`}
-                            tag={blog.meta.tags}
-                        />
-                    </li>
-                ))}
-            </ul>
+            <div className="md:flex md:space-x-4 space-x-0">
+                <SideBar tags={tags} />
+                <ul className="sm:grid md:grid-cols-2 gap-4 flex flex-col w-full">
+                    {blogs.map((blog) => (
+                        <li key={blog.slug} className={``}>
+                            <CardBlog
+                                title={blog.meta.title}
+                                description={blog.meta.description}
+                                date={blog.meta.date}
+                                link={`/blog/${blog.slug}`}
+                                tag={blog.meta.tags}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

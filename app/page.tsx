@@ -23,7 +23,10 @@ export default function Home() {
                             </p>
                         </div>
                         <Link href="/about">
-                            <button className=" border-solid border-2 dark:border-[#EAF7DF] border-[#381E70] hover:overflow-hidden dark:hover:bg-[#EAF7DF] hover:bg-[#381E70] hover:text-[#EAF7DF] dark:hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300 px-3 py-2 rounded-lg">
+                            <button
+                                type="button"
+                                className=" border-solid border-2 dark:border-[#EAF7DF] border-[#381E70] hover:overflow-hidden dark:hover:bg-[#EAF7DF] hover:bg-[#381E70] hover:text-[#EAF7DF] dark:hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300 px-3 py-2 rounded-lg"
+                            >
                                 About Me
                             </button>
                         </Link>
@@ -49,7 +52,7 @@ export default function Home() {
                 <p className="text-gray-500">
                     Here&apos;s latest project that I&apos;ve been working on
                 </p>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
+                <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">
                     {db.projects.map((project, id) => (
                         <div className={`${id <= 2 ? "" : "hidden"}`} key={id}>
                             <ProjectCard key={id} {...project} />
