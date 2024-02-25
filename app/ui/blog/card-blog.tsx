@@ -25,9 +25,7 @@ export default function CardBlog({
                         <p className="text-sm text-slate-400">{date}</p>
                     </div>
                     <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border-2 [&_p]:border-[#381E70] dark:[&_p]:border-slate-200 [&_p]:rounded-md gap-2 ">
-                        {tag?.map((tag) => (
-                            <p key={tag}>{tag}</p>
-                        ))}
+                        <p>{tag}</p>
                     </div>
                 </div>
             </Link>

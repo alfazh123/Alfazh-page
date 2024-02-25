@@ -12,12 +12,13 @@ export const metadata: Metadata = {
     },
 };
 
-const tags = {
-    tag: ["JavaScript", "React", "Next.js", "TailwindCSS"],
-    link: ["#", "#", "#", "#"],
-};
+const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
 
-export default function Blog() {
+export default function Blog({
+    searchParams,
+}: {
+    searchParams: { tag: string };
+}) {
     const blogDir = "blog";
 
     const files = fs.readdirSync(path.join(blogDir));
@@ -35,6 +36,9 @@ export default function Blog() {
         };
     });
 
+    console.log(searchParams.tag);
+    console.log(blogs);
+
     return (
         <div>
             <h1 className="font-bold text-3xl mb-4">Blog</h1>
@@ -42,7 +46,14 @@ export default function Blog() {
                 <SideBar tags={tags} />
                 <ul className="sm:grid md:grid-cols-2 gap-4 flex flex-col w-full">
                     {blogs.map((blog) => (
-                        <li key={blog.slug} className={``}>
+                        <li
+                            key={blog.slug}
+                            className={`${
+                                blog.meta.tags === searchParams.tag
+                                    ? ""
+                                    : "hidden"
+                            }`}
+                        >
                             <CardBlog
                                 title={blog.meta.title}
                                 description={blog.meta.description}
