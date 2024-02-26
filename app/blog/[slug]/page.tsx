@@ -7,7 +7,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-    const files = fs.readdirSync(path.join("blog"));
+    const files = fs.readdirSync(path.join("./app/posts"));
 
     const paths = files.map((filename) => ({
         slug: filename.replace(".mdx", ""),
@@ -16,21 +16,21 @@ export async function generateStaticParams() {
     return paths;
 }
 
-// export async function generateMetaData({ slug }: { slug: string }) {
-//     const markDownFile = fs.readFileSync(
-//         path.join("blog", `${slug}.mdx`),
-//         "utf-8"
-//     );
+export async function generateMetaData({ slug }: { slug: string }) {
+    const markDownFile = fs.readFileSync(
+        path.join("blog", `${slug}.mdx`),
+        "utf-8"
+    );
 
-//     const { data: fronMatter } = matter(markDownFile);
-//     console.log(fronMatter.title);
+    const { data: fronMatter } = matter(markDownFile);
+    console.log(fronMatter.title);
 
-//     const metadata: Metadata = {
-//         title: fronMatter.title,
-//     };
+    const metadata: Metadata = {
+        title: fronMatter.title,
+    };
 
-//     return metadata.title;
-// }
+    return metadata.title;
+}
 
 type Props = {
     params: { slug: string };
@@ -38,7 +38,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const markDownFile = fs.readFileSync(
-        path.join("blog", `${params.slug}.mdx`),
+        path.join("app/posts", `${params.slug}.mdx`),
         "utf-8"
     );
 
@@ -52,29 +52,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return metadata;
 }
 
-// export async function generateMetaData({
-//     slug,
-// }: {
-//     slug: string;
-// }): Promise<Metadata> {
-//     const markDownFile = fs.readFileSync(
-//         path.join("blog", `${slug}.mdx`),
-//         "utf-8"
-//     );
-
-//     const { data: fronMatter } = matter(markDownFile);
-//     console.log(fronMatter.title);
-
-//     const metadata: Metadata = {
-//         title: fronMatter.title,
-//     };
-
-//     return metadata;
-// }
-
 function getPost({ slug }: { slug: string }) {
     const markDownFile = fs.readFileSync(
-        path.join("blog", `${slug}.mdx`),
+        path.join("app/posts", `${slug}.mdx`),
         "utf-8"
     );
 
