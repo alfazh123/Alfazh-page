@@ -16,22 +16,6 @@ export async function generateStaticParams() {
     return paths;
 }
 
-export async function generateMetaData({ slug }: { slug: string }) {
-    const markDownFile = fs.readFileSync(
-        path.join("blog", `${slug}.mdx`),
-        "utf-8"
-    );
-
-    const { data: fronMatter } = matter(markDownFile);
-    console.log(fronMatter.title);
-
-    const metadata: Metadata = {
-        title: fronMatter.title,
-    };
-
-    return metadata.title;
-}
-
 type Props = {
     params: { slug: string };
 };
