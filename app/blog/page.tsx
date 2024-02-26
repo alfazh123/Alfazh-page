@@ -14,11 +14,7 @@ export const metadata: Metadata = {
 
 const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
 
-export default function Blog({
-    searchParams,
-}: {
-    searchParams: { tag: string };
-}) {
+export default function Blog() {
     try {
         const blogDir = "./app/posts";
 
@@ -37,9 +33,6 @@ export default function Blog({
             };
         });
 
-        const tag = searchParams.tag || "All";
-        console.log(tag);
-
         return (
             <div>
                 <h1 className="font-bold text-3xl mb-4">Blog</h1>
@@ -47,14 +40,7 @@ export default function Blog({
                     <SideBar tags={tags} />
                     <ul className="sm:grid md:grid-cols-2 gap-4 flex flex-col w-full">
                         {blogs.map((blog) => (
-                            <li
-                                key={blog.slug}
-                                className={`${
-                                    blog.meta.tags === tag || tag === "All"
-                                        ? ""
-                                        : "hidden"
-                                }`}
-                            >
+                            <li key={blog.slug}>
                                 <CardBlog
                                     title={blog.meta.title}
                                     description={blog.meta.description}
