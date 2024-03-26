@@ -12,5 +12,5 @@ export const options: NextAuthOptions = {
             clientSecret: process.env.GITHUB_SECRET as string,
         }),
     ],
-    secret: process.env.NEXTAUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET as string,
 };
