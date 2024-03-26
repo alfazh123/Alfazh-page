@@ -36,21 +36,23 @@ export default function Book({
         setIsOpen(true);
     };
 
+    const TogleModal = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div>
             <button
                 type="button"
-                data-ripple-light="true"
-                data-dialog-target={`"${id}"`}
-                className="dark:bg-slate-600 bg-slate-300 md:rounded-lg rounded-xl md:h-80 h-full w-full"
-                onClick={openModal}
+                className="dark:bg-slate-600 bg-slate-300 rounded-md md:h-80 h-full w-full"
+                onClick={TogleModal}
             >
                 <Image
                     src={src}
                     alt={title}
                     width={500}
                     height={500}
-                    className={`w-full aspect-auto rounded-md dark:bg-slate-700 h-full object-cover object-left md:block hidden`}
+                    className={`w-full aspect-auto rounded-sm dark:bg-slate-700 h-full object-cover object-left md:block hidden`}
                 />
                 <div className="md:hidden block my-5">
                     <Image
@@ -58,7 +60,7 @@ export default function Book({
                         alt={title}
                         width={500}
                         height={500}
-                        className={`mx-auto rounded-md sm:w-60 w-32`}
+                        className={`mx-auto rounded-sm sm:w-60 w-32`}
                     />
                     <p>
                         {title},{year}
@@ -66,57 +68,23 @@ export default function Book({
                 </div>
             </button>
 
-            {isOpen && (
+            {isOpen ? (
                 <div
-                    className="items-center z-20 bg-slate-800 bg-opacity-50 backdrop-blur-sm text-slate-800 "
-                    data-dialog-backdrop="true"
-                    style={{
-                        position: "fixed",
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                    onClick={closeModal}
+                    className="h-screen w-screen flex items-center z-0 fixed justify-center top-0 right-0 bottom-0 left-0 bg-slate-800 bg-opacity-50 backdrop-blur-sm text-slate-800"
+                    onClick={TogleModal}
                 >
-                    <div
-                        className="bg-slate-300 z-30 rounded-lg sm:w-5/6 w-full sm:m-0 mx-4 sm:p-10 p-4 md:grid md:grid-cols-2 md:gap-5 snap-y overflow-scroll h-5/6"
-                        onClick={(e) => e.stopPropagation()}
-                    >
+                    <div className="">
                         <Image
                             src={src}
                             alt={title}
                             width={500}
                             height={500}
-                            className="sm:w-96 w-40 aspect-auto rounded-md smh-full  bg-slate-700 "
+                            className="md:w-80 w-44 aspect-auto rounded-md dark:bg-slate-700 h-full"
+                            onClick={(e) => e.stopPropagation()}
                         />
-                        <div className="space-y-2">
-                            <div>
-                                <h2 className="md:text-2xl text-lg font-bold">
-                                    {title}
-                                </h2>
-                                <p className="md:text-sm text-xs font-semibold">
-                                    {publishedYear}
-                                </p>
-                                {author?.map((author, index) => (
-                                    <p
-                                        key={index}
-                                        className="md:text-sm text-xs font-semibold"
-                                    >
-                                        {author}
-                                    </p>
-                                ))}
-                            </div>
-                            <p className="text-justify md:text-base sm:text-sm text-xs">
-                                {description}
-                            </p>
-                        </div>
                     </div>
                 </div>
-            )}
+            ) : null}
         </div>
     );
 }

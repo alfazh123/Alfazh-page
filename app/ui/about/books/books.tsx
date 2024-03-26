@@ -7,7 +7,7 @@ import { db } from "@/app/lib/db";
 export default function BooksPanel() {
     const [active, setActive] = useState(1);
     return (
-        <ul className="flex relative md:flex-row flex-col gap-4">
+        <ul className="flex relative md:flex-row flex-col md:gap-1 gap-4">
             {db.books.map((book, id) => (
                 <li
                     key={book.id}
