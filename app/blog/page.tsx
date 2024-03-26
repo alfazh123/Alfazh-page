@@ -1,16 +1,9 @@
-import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import CardBlog from "../ui/blog/card-blog";
 import { Metadata } from "next";
 import SideBar from "../ui/blog/side-bar";
-
-export const metadata: Metadata = {
-    title: {
-        template: " %s | Blog | Alfazh",
-        default: "Blog",
-    },
-};
+import fs from "fs";
 
 const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
 
@@ -20,7 +13,7 @@ export default function Blog() {
 
         const files = fs.readdirSync(path.join(blogDir));
 
-        const blogs = files.map((filename) => {
+        const blogs = files.map((filename: any) => {
             const fileContent = fs.readFileSync(
                 path.join(blogDir, filename),
                 "utf-8"

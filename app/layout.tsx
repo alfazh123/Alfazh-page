@@ -13,23 +13,7 @@ export const metadata: Metadata = {
         template: " %s | Ahmd Mufahras Li Alfazh Assardew",
         default: "Ahmd Mufahras Li Alfazh Assardew",
     },
-    keywords: "Alfazh, Mufahras, Portfolio, Web, Developer",
     description: "A Portfolio Website by Alfazh",
-    authors: [{ name: "Ahmd Mufahras Li Alfazh Assardew" }],
-    metadataBase: new URL("https://alfazh.vercel.app"),
-    robots: {
-        index: false,
-        follow: true,
-        nocache: true,
-        googleBot: {
-            index: true,
-            follow: false,
-            noimageindex: true,
-            "max-video-preview": -1,
-            "max-image-preview": "large",
-            "max-snippet": -1,
-        },
-    },
 };
 
 export default function RootLayout({
