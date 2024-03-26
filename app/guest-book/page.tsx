@@ -4,9 +4,11 @@ import { getServerSession } from "next-auth";
 import { options } from "../api/auth/[...nextauth]/options";
 import LogoutBtn from "../ui/logout-btn";
 import LoginBtn from "../ui/login-btn";
+import { useSession } from "next-auth/react";
 
 export default async function GuestBook() {
     const session = await getServerSession(options);
+    // const { data: session } = useSession();
 
     function sessionUser() {
         if (session) {
