@@ -25,17 +25,6 @@ export default function Book({
 }: BookProps) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const closeModal = (event: any) => {
-        setIsOpen(false);
-        if (event.target.getAttribute("data-dialog-backdrop")) {
-            setIsOpen(false);
-        }
-    };
-
-    const openModal = () => {
-        setIsOpen(true);
-    };
-
     const TogleModal = () => {
         setIsOpen(!isOpen);
     };
@@ -70,7 +59,7 @@ export default function Book({
 
             {isOpen ? (
                 <div
-                    className="h-screen w-screen flex items-center z-0 fixed justify-center top-0 right-0 bottom-0 left-0 bg-slate-800 bg-opacity-50 backdrop-blur-sm text-slate-800"
+                    className="h-screen w-screen flex items-center z-0 fixed justify-center top-0 right-0 bottom-0 left-0 bg-slate-800 bg-opacity-60 backdrop-blur-sm text-slate-800"
                     onClick={TogleModal}
                 >
                     <div className="">

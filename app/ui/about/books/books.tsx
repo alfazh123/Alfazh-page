@@ -12,7 +12,7 @@ export default function BooksPanel() {
                 <li
                     key={book.id}
                     onClick={() => setActive(id)}
-                    className={`md:relative cursor-pointer md:w-[8%] 
+                    className={` cursor-pointer md:w-[8%] 
                         md:[transition:width_var(--transition,200ms_ease-in)] md:hover:w-[20%]
                         `}
                 >
