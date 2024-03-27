@@ -69,7 +69,7 @@ export default function About() {
                 </div>
                 <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md col-span-2">
                     <h3 className="text-lg font-semibold">Photo&apos;s</h3>
-                    <ul className="flex gap-5 snap-x overflow-x-auto snap-mandatory [&_li]:mb-2">
+                    <ul className="flex gap-5 snap-x overflow-x-auto snap-mandatory [&_li]:mb-2 no-scrollbar">
                         <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             1
                         </li>

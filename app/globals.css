@@ -28,6 +28,18 @@
   }
 }
 
+@layer utilities{
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+}
+
 /* rgb(42, 2, 65) */
 /* rgb(254, 93, 39) */
 /* rgb(188, 253, 85) */
