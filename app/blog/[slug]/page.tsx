@@ -70,8 +70,6 @@ export default function Blog({ params }: any) {
                 dark:prose-sm:text-slate-300
                 dark:prose-xs:text-slate-300
                 dark:prose-a:text-slate-200
-                hover:prose-a:text-emerald-300
-                dark:hover:prose-a:text-emerald-300
                 dark:prose-slate-200
                 dark:hover:after:prose-headings:content-['🔗']
                 dark:hover:prose-headings:underline

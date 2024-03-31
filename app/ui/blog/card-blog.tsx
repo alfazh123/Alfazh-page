@@ -16,15 +16,17 @@ export default function CardBlog({
     tag,
 }: CardBlogProps) {
     return (
-        <div className=" border-solid border-2 dark:border-slate-200 border-[#381E70]  p-4 rounded-lg ">
+        <div className="group border-solid border dark:border-slate200 border-slate700  p-4 rounded-lg ">
             <Link href={link} className="">
                 <div className="space-y-4">
                     <div>
-                        <h2 className="text-xl font-semibold">{title}</h2>
+                        <h2 className="text-xl font-semibold group-hover:underline group-hover:underline-offset-1">
+                            {title}
+                        </h2>
                         <p>{description}</p>
                         <p className="text-sm text-slate-400">{date}</p>
                     </div>
-                    <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border-2 [&_p]:border-[#381E70] dark:[&_p]:border-slate-200 [&_p]:rounded-md gap-2 ">
+                    <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border [&_p]:border-slate700 dark:[&_p]:border-slate200 [&_p]:rounded-md gap-2 ">
                         <p>{tag}</p>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default function CardHobby({
 }: HobbyProps) {
     return (
         <Link href={link}>
-            <div className="flex relative sm:flex-row flex-col sm:items-center sm:justify-between p-2 border-solid border-2 rounded-md border-[#381E70] dark:border-[#EAF7DF] h-32 sm:h-full cursor-pointer">
+            <div className="flex relative sm:flex-row flex-col sm:items-center sm:justify-between p-2 border-solid border-2 rounded-md border-slate700 dark:border-bone h-32 sm:h-full cursor-pointer">
                 <section>
                     <h1 className="font-bold text-2xl">{title}</h1>
                     <p className="italic">{description}</p>

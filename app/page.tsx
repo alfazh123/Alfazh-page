@@ -25,7 +25,7 @@ export default function Home() {
                         <Link href="/about">
                             <button
                                 type="button"
-                                className=" border-solid border-2 dark:border-[#EAF7DF] border-[#381E70] hover:overflow-hidden dark:hover:bg-[#EAF7DF] hover:bg-[#381E70] hover:text-[#EAF7DF] dark:hover:text-slate-800 hover:origin-top-right hover:transition-all hover:duration-300 px-3 py-2 rounded-lg"
+                                className=" border-solid border-2 dark:border-slate200 border-slate700 dark:hover:bg-slate200 hover:bg-slate700 hover:text-slate200 dark:hover:text-slate800 px-3 py-2 rounded-lg"
                             >
                                 About Me
                             </button>
@@ -37,7 +37,7 @@ export default function Home() {
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className="md:rounded-xl rounded-full md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-[#381E70] md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-[#381E70] md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
+                            className="md:rounded-xl rounded-full dark:border-slate200 border-slate600 md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-purbg-purple md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-purple md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
                         />
                     </div>
                 </header>
@@ -46,6 +46,7 @@ export default function Home() {
             <Link href="#content" className="flex justify-center items-center">
                 <FaArrowDown className="text-4xl cursor-pointer animate-bounce" />
             </Link>
+
             <div className="h-20" id="content"></div>
             <div className="space-y-2 mb-10">
                 <h3 className="text-2xl font-semibold">Some Project</h3>
@@ -59,7 +60,7 @@ export default function Home() {
                         </div>
                     ))}
                     <Link href="/project">
-                        <div className="group dark:bg-slate-600 border-solid border-2 border-[#381E70] dark:border-0 rounded-lg p-5 h-full flex flex-col justify-center items-center">
+                        <div className="group dark:bg-slate600 border-solid border-2 border-slate800 dark:border-0 rounded-lg p-5 h-full flex flex-col justify-center items-center">
                             <h3 className="text-2xl font-semibold">
                                 More Project
                             </h3>
@@ -73,7 +74,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col md:h-96 md:mb-20">
-                <h1 className="font-semibold text-2xl mt-10">
+                <h1 className="font-semibold text-2xl mt-10 pb-4">
                     Some of My Hobby
                 </h1>
                 <Hobby />

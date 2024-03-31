@@ -49,111 +49,66 @@ export default function About() {
             </div>
 
             <div className="md:grid md:grid-cols-2 flex flex-col gap-5">
-                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-sand dark:bg-slate800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Tech Tools</h3>
                     <div className="flex justify-center items-center">
                         <Skill />
                     </div>
                 </div>
-                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-sand dark:bg-slate800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Uses</h3>
                     <CardList list={db.uses} />
                 </div>
-                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-sand dark:bg-slate800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Music</h3>
                     <MusicCard music={db.music} />
                 </div>
-                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md">
+                <div className="bg-sand dark:bg-slate800 p-4 rounded-md">
                     <h3 className="text-lg font-semibold">Interest or hobby</h3>
                     <CardList list={db.interest} />
                 </div>
-                <div className="bg-[#DFD8BC] dark:bg-slate-800 p-4 rounded-md col-span-2">
+                <div className="bg-sand dark:bg-slate800 p-4 rounded-md col-span-2">
                     <h3 className="text-lg font-semibold">Photo&apos;s</h3>
                     <ul className="flex gap-5 snap-x overflow-x-auto snap-mandatory [&_li]:mb-2 no-scrollbar">
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             1
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             2
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             3
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             4
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             1
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             2
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             3
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             4
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             1
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             2
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             3
                         </li>
-                        <li className="dark:bg-slate-700 bg-slate-300 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
+                        <li className="dark:bg-slate700 bg-slate200 rounded-md h-32 w-32 flex justify-center items-center shrink-0 snap-start">
                             4
                         </li>
                     </ul>
                 </div>
             </div>
-
-            {/* <div>
-                <h3>Uses</h3>
-                <p>
-                    Here are some of the technologies that I use and some of the
-                    tools that I use to make my project.
-                </p>
-                <div>
-                    <h4>Front End</h4>
-                    <ul>
-                        <li>NextJs</li>
-                        <li>Tailwind</li>
-                        <li>React</li>
-                    </ul>
-
-                    <h4>Tools</h4>
-                    <ul>
-                        <li>VS Code</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>Figma</li>
-                        <li>Photoshop</li>
-                        <li>Lenovo Ideapad 3 15ARE05</li>
-                        <li>Samsung Galaxy A12</li>
-                    </ul>
-
-                    <h4>Others</h4>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Windows</li>
-                    </ul>
-
-                    <h4>Interest</h4>
-                    <ul>
-                        <li>Art</li>
-                        <li>Design</li>
-                    </ul>
-
-                    <h4>Other</h4>
-                    <ul>
-                        <li>Music</li>
-                        <li>Game</li>
-                    </ul>
-                </div>
-            </div> */}
         </div>
     );
 }

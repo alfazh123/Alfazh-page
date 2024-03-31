@@ -33,7 +33,7 @@ export default function Book({
         <div>
             <button
                 type="button"
-                className="dark:bg-slate-600 bg-slate-300 rounded-md md:h-80 h-full w-full"
+                className="dark:bg-slate600 bg-sand shadow-lg rounded-md md:h-80 h-full w-full"
                 onClick={TogleModal}
             >
                 <Image
@@ -41,7 +41,7 @@ export default function Book({
                     alt={title}
                     width={500}
                     height={500}
-                    className={`w-full aspect-auto rounded-sm dark:bg-slate-700 h-full object-cover object-left md:block hidden`}
+                    className={`w-full aspect-auto rounded-sm dark:bg-slate700 h-full object-cover object-left md:block hidden`}
                 />
                 <div className="md:hidden block my-5">
                     <Image
@@ -59,7 +59,7 @@ export default function Book({
 
             {isOpen ? (
                 <div
-                    className="h-screen w-screen flex items-center z-0 fixed justify-center top-0 right-0 bottom-0 left-0 bg-slate-800 bg-opacity-60 backdrop-blur-sm text-slate-800"
+                    className="h-screen w-screen flex items-center z-0 fixed justify-center top-0 right-0 bottom-0 left-0 bg-slate800 bg-opacity-60 backdrop-blur-md text-slate800"
                     onClick={TogleModal}
                 >
                     <div className="">
@@ -68,7 +68,7 @@ export default function Book({
                             alt={title}
                             width={500}
                             height={500}
-                            className="md:w-80 w-44 aspect-auto rounded-md dark:bg-slate-700 h-full"
+                            className="md:w-80 w-44 aspect-auto rounded-md dark:bg-slate700 h-full"
                             onClick={(e) => e.stopPropagation()}
                         />
                     </div>
