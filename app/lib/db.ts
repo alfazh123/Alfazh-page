@@ -83,7 +83,7 @@ export const db = {
             title: "Book",
             description: "Books i've read.",
             image: "/bookcard.svg",
-            link: "/about/books",
+            link: "/books",
         },
         {
             title: "Blogs",

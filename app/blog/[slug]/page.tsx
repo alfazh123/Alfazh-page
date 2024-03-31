@@ -7,7 +7,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
-    const files = fs.readdirSync(path.join("./app/posts"));
+    const files = fs.readdirSync(path.join("./posts"));
 
     const paths = files.map((filename) => ({
         slug: filename.replace(".mdx", ""),
@@ -22,7 +22,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const markDownFile = fs.readFileSync(
-        path.join("app/posts", `${params.slug}.mdx`),
+        path.join("posts", `${params.slug}.mdx`),
         "utf-8"
     );
 
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 function getPost({ slug }: { slug: string }) {
     const markDownFile = fs.readFileSync(
-        path.join("app/posts", `${slug}.mdx`),
+        path.join("posts", `${slug}.mdx`),
         "utf-8"
     );
 

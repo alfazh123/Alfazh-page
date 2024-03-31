@@ -9,7 +9,7 @@ const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
 
 export default function Blog() {
     try {
-        const blogDir = "./app/posts";
+        const blogDir = "./posts";
 
         const files = fs.readdirSync(path.join(blogDir));
 
