@@ -4,9 +4,11 @@ import matter from "gray-matter";
 import { Metadata } from "next";
 
 import CardBlog from "@/app/components/blog/card-blog";
-import SideBar from "@/app/components/blog/side-bar";
 
-const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
+export const metadata: Metadata = {
+    title: "Blog",
+    description: "Blog by Alfazh",
+};
 
 export default function Blog() {
     try {
@@ -30,22 +32,19 @@ export default function Blog() {
         return (
             <div>
                 <h1 className="font-bold text-3xl mb-4 pt-32">Blog</h1>
-                <div className="md:flex md:space-x-4 space-x-0">
-                    <SideBar tags={tags} />
-                    <ul className="sm:grid md:grid-cols-2 gap-4 flex flex-col w-full">
-                        {blogs.map((blog) => (
-                            <li key={blog.slug}>
-                                <CardBlog
-                                    title={blog.meta.title}
-                                    description={blog.meta.description}
-                                    date={blog.meta.date}
-                                    link={`/blog/${blog.slug}`}
-                                    tag={blog.meta.tags}
-                                />
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <ul className="gap-4 flex flex-col w-full">
+                    {blogs.map((blog) => (
+                        <li key={blog.slug}>
+                            <CardBlog
+                                title={blog.meta.title}
+                                description={blog.meta.description}
+                                date={blog.meta.date}
+                                link={`/blog/${blog.slug}`}
+                                tag={blog.meta.tags}
+                            />
+                        </li>
+                    ))}
+                </ul>
             </div>
         );
     } catch (error) {
