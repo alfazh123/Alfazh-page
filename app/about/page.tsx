@@ -1,29 +1,14 @@
 import Link from "next/link";
-import Skill from "../ui/hobby/skill";
-import CardList from "../ui/about/card-list";
-import MusicCard from "../ui/about/music-card";
-import { db } from "../lib/db";
 import { Metadata } from "next";
+
+import Skill from "@/app/components/hobby/skill";
+import CardList from "@/app/components/about/card-list";
+import MusicCard from "@/app/components/about/music-card";
+import { db } from "@/app/lib/db";
 
 export const metadata: Metadata = {
     title: "About",
 };
-
-const uses = ["Lenovo Ideapad 3 15ARE05", "Samsung A12"];
-
-const interest = ["Web Development", "Design", "Write Blogs"];
-
-const music = [
-    {
-        link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
-    },
-    {
-        link: "https://open.spotify.com/embed/track/2LBqCSwhJGcFQeTHMVGwy3?utm_source=generator",
-    },
-    {
-        link: "https://open.spotify.com/embed/track/3x3rREiGYpZFooxt9OZMAy?utm_source=generator",
-    },
-];
 
 export default function About() {
     return (

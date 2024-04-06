@@ -1,4 +1,4 @@
-import { SkeletonCardLinkProject } from "../ui/skeletonCards";
+import { SkeletonCardLinkProject } from "@/app/components/skeletonCards";
 
 export default function Project() {
     return (

@@ -1,9 +1,10 @@
+import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import CardBlog from "../ui/blog/card-blog";
 import { Metadata } from "next";
-import SideBar from "../ui/blog/side-bar";
-import fs from "fs";
+
+import CardBlog from "@/app/components/blog/card-blog";
+import SideBar from "@/app/components/blog/side-bar";
 
 const tags = ["All", "JavaScript", "React", "Next.js", "TailwindCSS"];
 

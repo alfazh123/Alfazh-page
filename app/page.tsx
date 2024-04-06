@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectCard from "./ui/project-card";
+import ProjectCard from "./components/project-card";
 import { db } from "@/app/lib/db";
-import Hobby from "./ui/hobby";
+import Hobby from "./components/hobby";
 import { FaArrowDown } from "react-icons/fa";
 
 export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
             <div className="min-h-3/4 flex sm:justify-center py-5 rounded-lg mb-20">
-                <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse transition-all ease-in-out duration-500">
+                {/* <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse transition-all ease-in-out duration-500">
                     <div className="flex flex-col justify-center md:w-1/2">
                         <div className="py-3 space-y-5">
                             <h1 className="md:text-6xl text-3xl font-bold">
-                                Hi, I&apos;m Alfazh
+                                Hi, I&apos;m Alfazh 
                             </h1>
                             <p className="md:text-xl text-base">
                                 I&apos;m a Front End Developer from Surabaya.
@@ -37,9 +37,29 @@ export default function Home() {
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className="md:rounded-xl rounded-full dark:border-slate200 border-slate600 md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-purbg-purple md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-purple md:hover:p-2 md:hover:transition-all duration-700 ease-in-out md:hover:skew-x-6 md:hover:-skew-y-6"
+                            className="md:rounded-xl rounded-full dark:border-slate200 border-slate600 md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-purbg-purple md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-purple md:hover:p-2 md:hover:transition-all"
                         />
                     </div>
+                </header> */}
+                <header className="rounded-lg  w-full  flex flex-col transition-all ease-in-out duration-500">
+                    <div className="py-3 space-y-5">
+                        <h1 className="md:text-6xl text-2xl font-bold gap-4">
+                            Ahmd Alfazh <br />
+                            Front-end Developer
+                        </h1>
+                    </div>
+                    <p className="md:text-base text-xs">
+                        Build a website with NextJs and TailwindCSS. I&apos;m a
+                        student at State University of Surabaya.
+                    </p>
+                    <Link href="/about">
+                        <button
+                            type="button"
+                            className=" border-solid border-2 dark:border-slate200 border-slate700 dark:hover:bg-slate200 hover:bg-slate700 hover:text-slate200 dark:hover:text-slate800 px-3 py-2 rounded-lg"
+                        >
+                            About Me
+                        </button>
+                    </Link>
                 </header>
             </div>
 

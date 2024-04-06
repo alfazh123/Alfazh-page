@@ -1,4 +1,4 @@
-import BooksPanel from "@/app/ui/about/books/books";
+import BooksPanel from "@/app/components/about/books/books";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

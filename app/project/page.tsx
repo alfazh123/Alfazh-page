@@ -1,4 +1,4 @@
-import ProjectCard from "../ui/project-card";
+import ProjectCard from "@/app/components/project-card";
 import { db } from "@/app/lib/db";
 import { Metadata } from "next";
 

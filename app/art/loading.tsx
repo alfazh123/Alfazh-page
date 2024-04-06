@@ -1,4 +1,4 @@
-import { SkeletonCardLinkArt } from "../ui/skeletonCards";
+import { SkeletonCardLinkArt } from "@/app/components/skeletonCards";
 
 export default function Project() {
     return (

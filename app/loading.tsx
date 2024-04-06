@@ -1,4 +1,4 @@
-import { SkeletonCardLinkProject } from "./ui/skeletonCards";
+import { SkeletonCardLinkProject } from "./components/skeletonCards";
 
 export default function Loading() {
     return (
