@@ -25,6 +25,7 @@ export default function ProjectCard({
                     width={500}
                     height={500}
                     className="w-full aspect-auto ima rounded-md blur-sm group-hover:blur-none transition-all ease-in-out duration-100 p-2"
+                    loading="lazy"
                 />
                 <div className="items-center">
                     <h3 className="text-lg font-bold mt-3 mx-1 group-hover:underline">
