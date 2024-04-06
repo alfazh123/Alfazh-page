@@ -63,6 +63,7 @@ module.exports = {
             slate700: "#334155",
             slate800: "#1e293b",
             sand: "#DFD8BC",
+            sand100: "#eae6d9",
         },
     },
     plugins: [require("@tailwindcss/typography")],

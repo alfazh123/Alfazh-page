@@ -24,10 +24,12 @@ export default function CardBlog({
                             {title}
                         </h2>
                         <p>{description}</p>
-                        <p className="text-sm text-slate-400">{date}</p>
-                    </div>
-                    <div className="flex [&_p]:px-2 [&_p]:py-1 [&_p]:border-solid [&_p]:border [&_p]:border-slate700 dark:[&_p]:border-slate200 [&_p]:rounded-md gap-2 ">
-                        <p>{tag}</p>
+                        <div className="inline-flex gap-4 justify-center items-center">
+                            <p className="text-sm text-slate-400">{date}</p>
+                            <p className="flec px-3l py-1 bg-sand100 rounded-full text-sm">
+                                {tag}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </Link>
