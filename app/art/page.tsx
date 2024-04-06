@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Art() {
     return (
-        <div className="flex flex-col space-y-20 px-4">
+        <div className="flex flex-col space-y-20 px-4 pt-32">
             <header>
                 <h1 className="text-6xl font-bold">Art</h1>
                 <p>This page is for my recent art, hope you enjoy it!</p>

@@ -29,7 +29,7 @@ export default function Blog() {
 
         return (
             <div>
-                <h1 className="font-bold text-3xl mb-4">Blog</h1>
+                <h1 className="font-bold text-3xl mb-4 pt-32">Blog</h1>
                 <div className="md:flex md:space-x-4 space-x-0">
                     <SideBar tags={tags} />
                     <ul className="sm:grid md:grid-cols-2 gap-4 flex flex-col w-full">

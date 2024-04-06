@@ -1,6 +1,6 @@
 "use client";
 
-import Book from "@/app/ui/about/books/book";
+import Book from "@/app/components/about/books/book";
 import { useState } from "react";
 import { db } from "@/app/lib/db";
 

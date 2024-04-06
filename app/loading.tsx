@@ -2,7 +2,7 @@ import { SkeletonCardLinkProject } from "./components/skeletonCards";
 
 export default function Loading() {
     return (
-        <main className="flex flex-col mb-10 px-4">
+        <main className="flex flex-col mb-10 px-4 pt-32">
             <div className="min-h-3/4 static flex justify-center p-5 rounded-lg mb-20">
                 <div className="static bottom-0 left-0 rounded-lg min-h-96 w-full">
                     <div className="mt-32 py-3 lg:w-1/2 space-y-5">

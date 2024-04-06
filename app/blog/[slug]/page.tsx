@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Head from "next/head";
+
+import { Metadata } from "next";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { Metadata } from "next";
 
 export async function generateStaticParams() {
     const files = fs.readdirSync(path.join("./posts"));
@@ -73,7 +73,9 @@ export default function Blog({ params }: any) {
                 dark:prose-slate-200
                 dark:hover:after:prose-headings:content-['🔗']
                 dark:hover:prose-headings:underline
-                dark:text-slate-200 prose-sm md:prose-base lg:prose-lg !prose-slate progress-invert m-auto"
+                dark:text-slate-200 prose-sm md:prose-base lg:prose-lg !prose-slate progress-invert m-auto
+                pt-32
+                "
             >
                 <header className="border-solid border-b-2 dark:border-slate-200 border-slate-800">
                     <h1>{props.fronMatter.title}</h1>
