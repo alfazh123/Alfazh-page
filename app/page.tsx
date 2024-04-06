@@ -1,71 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectCard from "./components/project-card";
+
 import { db } from "@/app/lib/db";
+
+import ProjectCard from "./components/project-card";
 import Hobby from "./components/hobby";
+import { AboutButton } from "./components/button";
+import { ProjectButton } from "./components/button";
+
 import { FaArrowDown } from "react-icons/fa";
 
 export default function Home() {
     return (
         <main className="flex flex-col mb-10 px-4">
-            <div className="min-h-3/4 flex sm:justify-center py-5 rounded-lg mb-20">
-                {/* <header className="rounded-lg  w-full md:flex md:flex-row md:justify-between  flex flex-col-reverse transition-all ease-in-out duration-500">
-                    <div className="flex flex-col justify-center md:w-1/2">
-                        <div className="py-3 space-y-5">
-                            <h1 className="md:text-6xl text-3xl font-bold">
-                                Hi, I&apos;m Alfazh 
-                            </h1>
-                            <p className="md:text-xl text-base">
-                                I&apos;m a Front End Developer from Surabaya.
-                                Personaly I&apos;m using NextJs and Tailwind for
-                                My Project. I&apos;m a student at State
-                                University of Surabaya.
-                            </p>
-                        </div>
-                        <Link href="/about">
-                            <button
-                                type="button"
-                                className=" border-solid border-2 dark:border-slate200 border-slate700 dark:hover:bg-slate200 hover:bg-slate700 hover:text-slate200 dark:hover:text-slate800 px-3 py-2 rounded-lg"
-                            >
-                                About Me
-                            </button>
-                        </Link>
-                    </div>
-                    <div className="flex md:justify-center items-center">
-                        <Image
-                            src="/profil.jpg"
-                            alt="Picture of the author"
-                            width={500}
-                            height={500}
-                            className="md:rounded-xl rounded-full dark:border-slate200 border-slate600 md:w-72 w-12 md:border-0 border-solid border-2 p-1 dark:border-slate-200 border-purbg-purple md:hover:shadow-2xl cursor-pointer md:hover:scale-90 dark:md:hover:bg-slate-600 md:hover:bg-purple md:hover:p-2 md:hover:transition-all"
-                        />
-                    </div>
-                </header> */}
-                <header className="rounded-lg  w-full  flex flex-col transition-all ease-in-out duration-500">
-                    <div className="py-3 space-y-5">
-                        <h1 className="md:text-6xl text-2xl font-bold gap-4">
+            <div className="flex items-center h-screen flex-col justify-center gap-12 border-solid border-b-2 border-b-slate700 dark:border-b-slate300">
+                <header className="w-full  flex flex-col transition-all ease-in-out duration-700 ">
+                    <div>
+                        <h1 className="lg:text-7xl md:text-6xl sm:text-4xl text-4xl font-bold gap-4">
                             Ahmd Alfazh <br />
                             Front-end Developer
                         </h1>
                     </div>
-                    <p className="md:text-base text-xs">
+                    <p className="md:text-base text-xs pt-4">
                         Build a website with NextJs and TailwindCSS. I&apos;m a
                         student at State University of Surabaya.
                     </p>
-                    <Link href="/about">
-                        <button
-                            type="button"
-                            className=" border-solid border-2 dark:border-slate200 border-slate700 dark:hover:bg-slate200 hover:bg-slate700 hover:text-slate200 dark:hover:text-slate800 px-3 py-2 rounded-lg"
-                        >
-                            About Me
-                        </button>
-                    </Link>
+                    <AboutButton />
                 </header>
+                <Link
+                    href="#content"
+                    className="flex flex-col justify-center items-center group"
+                >
+                    <FaArrowDown className="text-4xl cursor-pointer animate-bounce" />
+                    <div className="p-2 bg-slate600 rounded-full animate-ping absolute hidden group-hover:block"></div>
+                </Link>
             </div>
-
-            <Link href="#content" className="flex justify-center items-center">
-                <FaArrowDown className="text-4xl cursor-pointer animate-bounce" />
-            </Link>
 
             <div className="h-20" id="content"></div>
             <div className="space-y-2 mb-10">
@@ -79,17 +48,7 @@ export default function Home() {
                             <ProjectCard key={id} {...project} />
                         </div>
                     ))}
-                    <Link href="/project">
-                        <div className="group dark:bg-slate600 border-solid border-2 border-slate800 dark:border-0 rounded-lg p-5 h-full flex flex-col justify-center items-center">
-                            <h3 className="text-2xl font-semibold">
-                                More Project
-                            </h3>
-                            <p className="text-gray-500 group-hover:underline">
-                                You can see more project on my github
-                            </p>
-                            <p>See more</p>
-                        </div>
-                    </Link>
+                    <ProjectButton />
                 </div>
             </div>
 
