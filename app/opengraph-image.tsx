@@ -11,21 +11,26 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image() {
-    const interSemiBold = await fetch(
-        "https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-    ).then((res) => res.text());
-
-    return (
-        <html lang="en">
-            <head>
-                <style>{interSemiBold}</style>
-            </head>
-            <body className="bg-gradient-to-br from-blue-500 to-purple-500 text-white font-inter">
-                <div className="flex flex-col items-center justify-center h-full w-full">
-                    <h1 className="text-4xl font-bold">Ahmd Alfazh</h1>
-                    <p className="text-lg">Front-end Developer</p>
-                </div>
-            </body>
-        </html>
+    return new ImageResponse(
+        (
+            <div
+                style={{
+                    fontFamily: "Inter, sans-serif",
+                    fontSize: 24,
+                    background: "black",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "white",
+                }}
+            >
+                A
+            </div>
+        ),
+        {
+            ...size,
+        }
     );
 }
