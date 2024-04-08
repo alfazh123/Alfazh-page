@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import { Viewport } from "next";
+
 import { Inter, Source_Code_Pro, Maven_Pro, Fira_Code } from "next/font/google";
 import "./globals.css";
+
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 
@@ -8,12 +11,21 @@ const inter = Inter({ subsets: ["latin"] });
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 const mavenPro = Maven_Pro({ subsets: ["latin"], weight: ["400"] });
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+};
+
 export const metadata: Metadata = {
     title: {
         template: " %s | Ahmd Mufahras Li Alfazh Assardew",
         default: "Ahmd Mufahras Li Alfazh Assardew",
     },
-    description: "A Portfolio Website by Alfazh",
+    description:
+        "A Portfolio Website by Alfazh, show some of my Pprojects, Art, and Blog.",
 };
 
 export default function RootLayout({
