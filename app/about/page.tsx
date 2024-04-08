@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Skill from "@/app/components/hobby/skill";
 import CardList from "@/app/components/about/card-list";
 import MusicCard from "@/app/components/about/music-card";
-import { db } from "@/app/lib/db";
+import { db } from "@/app/lib/lib";
 
 export const metadata: Metadata = {
     title: "About",

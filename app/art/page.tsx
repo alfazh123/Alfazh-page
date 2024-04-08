@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 
-import { db } from "@/app/lib/db";
+import { db } from "@/app/lib/lib";
 
 export const metadata: Metadata = {
     title: "Art",

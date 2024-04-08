@@ -26,7 +26,7 @@ export default function CardBlog({
                         <p>{description}</p>
                         <div className="inline-flex gap-4 justify-center items-center">
                             <p className="text-sm text-slate-400">{date}</p>
-                            <p className="flec px-3l py-1 bg-sand100 rounded-full text-sm">
+                            <p className="flec px-3 py-1 bg-sand100 rounded-full text-sm">
                                 {tag}
                             </p>
                         </div>

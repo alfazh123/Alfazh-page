@@ -7,11 +7,6 @@ import {
     FaLink,
 } from "react-icons/fa";
 
-interface FooterProps {
-    title: string;
-    link: string;
-}
-
 const links = [
     {
         href: "https://www.linkedin.com/in/ahmd-mufahras-li-alfazh-assardew-031a08255/",

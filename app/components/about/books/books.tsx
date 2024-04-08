@@ -2,7 +2,7 @@
 
 import Book from "@/app/components/about/books/book";
 import { useState } from "react";
-import { db } from "@/app/lib/db";
+import { db } from "@/app/lib/lib";
 
 export default function BooksPanel() {
     const [active, setActive] = useState(1);

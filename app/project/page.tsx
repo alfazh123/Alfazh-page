@@ -1,5 +1,5 @@
 import ProjectCard from "@/app/components/project-card";
-import { db } from "@/app/lib/db";
+import { db } from "@/app/lib/lib";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 import Skill from "./hobby/skill";
 import CardHobby from "./hobby/card-hobby";
-import { db } from "../lib/db";
+import { db } from "../lib/lib";
 
 export default function Hobby() {
     return (
