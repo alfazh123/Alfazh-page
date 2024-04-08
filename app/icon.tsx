@@ -1,16 +1,36 @@
 import { ImageResponse } from "next/og";
 
-export function generateImageMetadata() {
-    return [
+export const runtime = "edge";
+
+// Image metadata
+export const size = {
+    width: 32,
+    height: 32,
+};
+export const contentType = "image/png";
+
+// Image generation
+export default function Icon() {
+    return new ImageResponse(
+        (
+            // ImageResponse JSX element
+            <div
+                style={{
+                    fontSize: 24,
+                    background: "black",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "white",
+                }}
+            >
+                Alfazh
+            </div>
+        ),
         {
-            contentType: "image/png",
-            size: { width: 48, height: 48 },
-            id: "small",
-        },
-        {
-            contentType: "image/png",
-            size: { width: 96, height: 96 },
-            id: "medium",
-        },
-    ];
+            ...size,
+        }
+    );
 }

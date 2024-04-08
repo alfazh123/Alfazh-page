@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:h-96 md:mb-20">
+            <div className="flex flex-col">
                 <h1 className="font-semibold text-2xl mt-10 pb-4">
                     Some of My Hobby
                 </h1>
