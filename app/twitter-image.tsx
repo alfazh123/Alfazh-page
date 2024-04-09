@@ -19,14 +19,14 @@ export default async function Image() {
     return new ImageResponse(
         (
             // ImageResponse JSX element
-            <div className="text-4xl font-bold text-center flex items-center justify-center w-full h-full bg-white">
-                Ahmd Alfazh
+            <div
+                tw={`bg-[#DFD8BC] text-center flex flex-col justify-center border-solid border-4 border border-slate-600 pl-32 w-full h-full`}
+            >
+                <h1 tw="text-6xl font-bold">Ahmd Alfazh</h1>
+                <p tw="text-xl">Portofolio Website by Alfazh</p>
             </div>
         ),
-        // ImageResponse options
         {
-            // For convenience, we can re-use the exported opengraph-image
-            // size config to also set the ImageResponse's width and height.
             ...size,
         }
     );
