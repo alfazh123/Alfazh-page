@@ -19,7 +19,17 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 export default async function Image() {
     return new ImageResponse(
         (
-            <div>
+            <div
+                style={{
+                    fontSize: 128,
+                    background: "white",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}
+            >
                 <div>
                     <div>
                         <h1>Ahmd Alfazh</h1>
