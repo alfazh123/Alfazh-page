@@ -19,7 +19,7 @@ export default async function Image() {
     return new ImageResponse(
         (
             // ImageResponse JSX element
-            <div className="text-4xl font-bold text-center flex items-center justify-center w-full h-full bg-white">
+            <div tw="text-4xl font-bold text-center flex items-center justify-center w-full h-full bg-white">
                 Ahmd Alfazh
             </div>
         ),
