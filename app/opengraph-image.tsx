@@ -19,14 +19,14 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 export default async function Image() {
     return new ImageResponse(
         (
-            <div className="flex items-center bg-sand h-full w-full flex-col justify-center gap-12 border-solid border-b-4 border-b-slate700">
-                <header className="flex flex-col transition-all ease-in-out duration-700 absolute left-0">
+            <div tw="flex items-center bg-sand h-full w-full flex-col justify-center gap-12 border-solid border-b-4 border-b-slate700">
+                <header tw="flex flex-col transition-all ease-in-out duration-700 absolute left-0">
                     <div>
-                        <h1 className="text-7xl text-slate700 font-bold gap-4">
+                        <h1 tw="text-7xl text-slate700 font-bold gap-4">
                             Ahmd Alfazh
                         </h1>
                     </div>
-                    <p className="text-base pt-4">
+                    <p tw="text-base pt-4">
                         Front-end Developer from Surabaya, Indonesia.
                     </p>
                 </header>

@@ -36,8 +36,7 @@ export default function Home() {
                 </Link>
             </div>
 
-            <div className="h-20" id="content"></div>
-            <div className="space-y-2 mb-10">
+            <div className="space-y-2 pt-32 mb-10" id="content">
                 <h3 className="text-2xl font-semibold">Some Project</h3>
                 <p className="text-gray-500">
                     Here&apos;s latest project that I&apos;ve been working on
