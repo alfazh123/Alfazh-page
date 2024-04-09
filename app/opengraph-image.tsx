@@ -12,8 +12,6 @@ export const size = {
 
 export const contentType = "image/png";
 
-export const type = "website";
-
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export default async function Image() {

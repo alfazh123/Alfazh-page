@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: "*",
             allow: "/",
-            disallow: ["/lib"],
+            disallow: ["/lib", "/public"],
         },
         sitemap: "https://alfazh.vercel.app/sitemap.xml",
     };
