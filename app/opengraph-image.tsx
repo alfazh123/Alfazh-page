@@ -29,12 +29,7 @@ export default async function Image() {
                     color: "black",
                 }}
             >
-                <div>
-                    <div>
-                        <h1>Ahmd Alfazh</h1>
-                    </div>
-                    <p>Front-end Developer from Surabaya, Indonesia.</p>
-                </div>
+                Ahmd Alfazh
             </div>
         ),
         {
