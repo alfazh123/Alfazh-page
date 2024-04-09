@@ -1,10 +1,10 @@
 import { ImageResponse } from "next/og";
-import React from "react";
-import { Open_Sans } from "next/font/google";
 
+// Route segment config
 export const runtime = "edge";
 
-export const alt = "Ahmd Alfazh";
+// Image metadata
+export const alt = "About Acme";
 export const size = {
     width: 1200,
     height: 630,
@@ -12,36 +12,22 @@ export const size = {
 
 export const contentType = "image/png";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
-
+// Image generation
 export default async function Image() {
+    // Font
+
     return new ImageResponse(
         (
-            <div
-                style={{
-                    fontSize: 128,
-                    background: "white",
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "black",
-                }}
-            >
+            // ImageResponse JSX element
+            <div tw="text-4xl font-bold text-center flex items-center justify-center w-full h-full bg-white">
                 Ahmd Alfazh
             </div>
         ),
+        // ImageResponse options
         {
+            // For convenience, we can re-use the exported opengraph-image
+            // size config to also set the ImageResponse's width and height.
             ...size,
-            fonts: [
-                {
-                    name: "Open Sans",
-                    data: Buffer.from(openSans.className),
-                    style: "normal",
-                    weight: 400,
-                },
-            ],
         }
     );
 }
