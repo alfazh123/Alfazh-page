@@ -19,18 +19,8 @@ export default async function Image() {
     return new ImageResponse(
         (
             // ImageResponse JSX element
-            <div
-                style={{
-                    fontSize: 128,
-                    background: "white",
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                }}
-            >
-                About Acme
+            <div className="text-4xl font-bold text-center flex items-center justify-center w-full h-full bg-white">
+                Ahmd Alfazh
             </div>
         ),
         // ImageResponse options
