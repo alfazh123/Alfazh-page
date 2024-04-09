@@ -26,6 +26,7 @@ export default async function Image() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    color: "black",
                 }}
             >
                 <div>
