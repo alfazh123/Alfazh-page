@@ -27,21 +27,6 @@ export const metadata: Metadata = {
     description:
         "A Portfolio Website by Alfazh, show some of my Pprojects, Art, and Blog.",
     metadataBase: new URL("https://alfazh.vercel.app"),
-    openGraph: {
-        title: "Ahmd Mufahras Li Alfazh Assardew",
-        description:
-            "A Portfolio Website by Alfazh, show some of my Pprojects, Art, and Blog.",
-        type: "website",
-        locale: "en_US",
-        siteName: "Ahmd Mufahras Li Alfazh Assardew",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Ahmd Alfazh",
-        description:
-            "A Portfolio Website by Alfazh, show some of my Pprojects, Art, and Blog.",
-        images: ["https://alfazh.vercel.app/og-image.png"],
-    },
 };
 
 export default function RootLayout({
