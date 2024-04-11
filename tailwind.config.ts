@@ -33,6 +33,7 @@ const config: Config = {
             slate600: "#475569",
             slate700: "#334155",
             slate800: "#1e293b",
+            black200: "#393939",
             sand: "#DFD8BC",
             sand100: "#eae6d9",
         },
