@@ -51,18 +51,6 @@ export const db = {
             tag: ["NextJS"],
         },
     ],
-    art: [
-        {
-            id: "1",
-            title: "The Starry Night",
-            "image-url": "/art1.png",
-        },
-        {
-            id: "2",
-            title: "The Starry Night",
-            "image-url": "/art2.png",
-        },
-    ],
     uses: ["Lenovo Ideapad 3 15ARE05", "Samsung A12"],
     interest: ["Web Development", "Design", "Write Blogs"],
     music: [
@@ -96,8 +84,8 @@ export const db = {
             link: "/blog",
         },
         {
-            title: "Art",
-            description: "Art",
+            title: "Art & Photography",
+            description: "Art & Photography by Alfazh",
             image: "",
             link: "/art",
         },
