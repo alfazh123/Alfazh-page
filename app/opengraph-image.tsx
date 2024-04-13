@@ -26,10 +26,14 @@ export default async function Image() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "black",
                 }}
             >
-                Ahmd Alfazh
+                <div>
+                    <div>
+                        <h1>Ahmd Alfazh</h1>
+                    </div>
+                    <p>Front-end Developer from Surabaya, Indonesia.</p>
+                </div>
             </div>
         ),
         {
