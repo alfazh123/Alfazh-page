@@ -19,7 +19,6 @@ export default function Project() {
                             src={project.src}
                             href={project.href}
                             tag={project.tag}
-                            year={project.year}
                         />
                     </div>
                 ))}

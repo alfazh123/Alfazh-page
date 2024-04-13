@@ -33,9 +33,7 @@ export const db = {
         {
             id: "1",
             title: "ACE 2024",
-            year: 2024,
-            description:
-                "An application for Campus Expo event on Qomaruddin boarding school.",
+            description: "NextJS is a React Framework for production",
             src: "/ace2024.png",
             href: "https://ace2024.vercel.app",
             tag: ["NextJS", "MDX"],
@@ -43,9 +41,7 @@ export const db = {
         {
             id: "2",
             title: "Redesign KediriKab",
-            year: 2023,
-            description:
-                "Redesign KediriKab website with NextJS, TailwindCSS DaisyUI.",
+            description: "Tailwind is a utility-first CSS framework",
             src: "/kediriweb.png",
             href: "https://github.com/alfazh123/redesign_kedirikab",
             tag: ["NextJS"],
